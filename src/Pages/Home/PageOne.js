@@ -1,12 +1,15 @@
 import React from "react";
-import Banner from "../../Components/HomeComponent/Banner";
 import About from "../../Components/HomeComponent/About/About";
+import { Team } from "../../Components/HomeComponent/Team/Team";
+import Banner from "../../Components/Shared/Banners/Banner";
 
 function PageOne() {
   return (
     <main>
       <Banner></Banner>
       <About></About>
+      {/* <CarFeature></CarFeature> */}
+      <Team></Team>
     </main>
   );
 }

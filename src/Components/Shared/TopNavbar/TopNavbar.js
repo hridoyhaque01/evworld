@@ -3,158 +3,203 @@ import { Link } from "react-router-dom";
 import { logoWhite } from "../../../Assets/getImages";
 
 function TopNavbar() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState({});
+  const submenuRef = useRef({});
+
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const handleDropdown = (menu) => {
+    console.log(menu);
+    setIsSubmenuOpen((prev) => ({
+      [menu]: !prev[menu],
+    }));
+  };
 
   return (
-    <nav className="w-10/12 mx-auto py-8 bg-navyDark text-pureWhite uppercase font-dmSans font-medium relative z-50">
-      <div className="flex justify-between">
-        <div className="max-w-max block lg:hidden">
-          <Link
-            className="hover:text-primaryColor active:bg-transparent"
-            to="/"
-          >
-            <img src={logoWhite} alt="logo" />
-          </Link>
-        </div>
-        <div
-          className={`min-h-screen flex flex-col justify-start gap-y-6 lg:items-center lg:w-full lg:flex-row lg:justify-between fixed top-0 right-0 lg:min-h-min lg:relative bg-navySemi lg:bg-transparent overflow-hidden duration-200 lg:px-0 ${
-            showMenu ? "w-80 px-8" : "w-0 px-0"
-          }`}
-        >
-          <div className="block lg:hidden mt-8 text-right">
-            <button type="button" onClick={() => setShowMenu(false)}>
-              <span class="material-symbols-outlined text-primaryColor">
-                close
-              </span>
-            </button>
-          </div>
-
-          <ul className="flex gap-x-6 flex-col lg:flex-row gap-y-6">
-            <li>
-              <Link
-                className="gap-1 flex items-center hover:text-primaryColor active:bg-transparent px-6 py-2 hover:bg-navyDark lg:p-0 lg:hover:bg-transparent lg:max-w-max rounded-md"
-                to=""
-              >
-                Home
-              </Link>
-            </li>
-            <li className="relative dropdown dropdown-hover">
-              <Link
-                className="gap-1 flex items-center hover:text-primaryColor active:bg-transparent px-6 py-2 hover:bg-navyDark lg:p-0 lg:hover:bg-transparent lg:max-w-max rounded-md"
-                to=""
-              >
-                <span>Pages</span>
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </Link>
-              <ul className=" bg-navySemi w-36 rounded-lg dropdown-content menu ">
-                <li>
-                  <Link
-                    to="/"
-                    className="pl-4 block py-2 hover:text-primaryColor"
-                  >
-                    Page 1
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/"
-                    className="pl-4 block py-2 hover:text-primaryColor"
-                  >
-                    Page 1
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link
-                className="gap-1 flex items-center hover:text-primaryColor active:bg-transparent px-6 py-2 hover:bg-navyDark lg:p-0 lg:hover:bg-transparent lg:max-w-max rounded-md"
-                to=""
-              >
-                Station
-              </Link>
-            </li>
-          </ul>
-
+    <nav className="w-full py-6 relative z-50">
+      <div className="w-10/12 mx-auto">
+        <div className="flex items-center justify-between md:hidden relative ">
           {/* logo  */}
-
-          <div className="max-w-max hidden lg:block">
-            <Link
-              className="hover:text-primaryColor active:bg-transparent"
-              to="/"
-            >
+          <div className="">
+            <Link to="/">
               <img src={logoWhite} alt="logo" />
             </Link>
           </div>
-
-          {/* right side menu  */}
-          <ul className="flex gap-x-6 flex-col lg:flex-row gap-y-6">
-            <li>
-              <Link
-                className="gap-1 flex items-center hover:text-primaryColor active:bg-transparent px-6 py-2 hover:bg-navyDark lg:p-0 lg:hover:bg-transparent lg:max-w-max rounded-md"
-                to=""
-              >
-                blog
-              </Link>
-            </li>
-
-            <li className="relative dropdown dropdown-hover">
-              <Link
-                className="gap-1 flex items-center hover:text-primaryColor active:bg-transparent px-6 py-2 hover:bg-navyDark lg:p-0 lg:hover:bg-transparent lg:max-w-max rounded-md"
-                to=""
-              >
-                <span>Shop</span>
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-                </svg>
-              </Link>
-              <ul className=" bg-navySemi w-36 rounded-lg dropdown-content menu ">
-                <li>
-                  <Link
-                    to="/"
-                    className="pl-4 block py-2 hover:text-primaryColor"
-                  >
-                    Shop 1
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/"
-                    className="pl-4 block py-2 hover:text-primaryColor"
-                  >
-                    Shop 1
-                  </Link>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <Link
-                className="gap-1 flex items-center hover:text-primaryColor active:bg-transparent px-6 py-2 hover:bg-navyDark lg:p-0 lg:hover:bg-transparent lg:max-w-max rounded-md"
-                to=""
-              >
-                Contact us
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="block lg:hidden">
-          <button type="button" onClick={() => setShowMenu(true)}>
-            <span class="material-symbols-outlined">menu</span>
+          <button type="button" onClick={() => setToggleMenu(true)}>
+            <span className="material-symbols-outlined text-primaryColor">
+              menu
+            </span>
           </button>
+          {/* toggle menu  */}
+        </div>
+
+        {/* navbar manus  */}
+
+        {toggleMenu && (
+          <div
+            className="fixed top-0 right-0 bottom-0 left-0 bg-navyDark md:hidden"
+            onClick={() => setToggleMenu(false)}
+          ></div>
+        )}
+
+        <div
+          className={`fixed top-0 right-0 md:relative h-full bg-navySemi ${
+            toggleMenu ? "w-80" : "w-0 md:w-full"
+          } md:bg-transparent md:overflow-visible overflow-hidden duration-400`}
+        >
+          <div
+            className={`flex flex-col justify-start md:flex-row md:justify-between md:items-center gap-6 md:gap-4 lg:gap-6  p-8 md:p-0`}
+          >
+            {/* close menu button  */}
+
+            <div className="text-right md:hidden">
+              <button type="button" onClick={() => setToggleMenu(false)}>
+                <span className="material-symbols-outlined text-primaryColor">
+                  close
+                </span>
+              </button>
+            </div>
+
+            {/* first menu  */}
+
+            <ul className="flex flex-col md:items-center justify-start md:flex-row gap-6 md:gap-4 lg:gap-6">
+              <li className="">
+                <Link
+                  to="/"
+                  className="flex text-whiteHigh hover:text-primaryColor py-2 pl-4 hover:bg-navyDark md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100"
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="group relative">
+                <p
+                  className="group flex items-center text-whiteHigh hover:text-primaryColor py-2 pl-4 hover:bg-navyDark md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100 cursor-pointer "
+                  onClick={() => handleDropdown("pages")}
+                >
+                  <span>Pages</span>
+                  <span
+                    className={`material-symbols-outlined duration-300 ${
+                      isSubmenuOpen["pages"]
+                        ? "rotate-180 md:rotate-0 md:group-hover:rotate-180"
+                        : "md:group-hover:rotate-180"
+                    }`}
+                  >
+                    expand_more
+                  </span>
+                </p>
+                <ul
+                  className={`static md:absolute bg-navySemi rounded-lg md:translate-y-6 md:opacity-0 md:invisible duration-300 md:group-hover:translate-y-0 md:group-hover:opacity-100 md:group-hover:visible ml-4 md:ml-0 overflow-hidden ${
+                    !isSubmenuOpen["pages"] && "max-h-0 md:max-h-max"
+                  }`}
+                  ref={(ref) => (submenuRef.current["pages"] = ref)}
+                  style={{
+                    maxHeight:
+                      isSubmenuOpen["pages"] &&
+                      `${submenuRef.current["pages"]?.scrollHeight}px`,
+                  }}
+                >
+                  <li>
+                    <Link
+                      to=""
+                      className="text-whiteHigh hover:text-primaryColor uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    >
+                      Page 1
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to=""
+                      className="text-whiteHigh hover:text-primaryColor uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    >
+                      Page 2
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="">
+                <Link
+                  to="/"
+                  className="flex text-whiteHigh hover:text-primaryColor py-2 pl-4 hover:bg-navyDark md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100"
+                >
+                  Station
+                </Link>
+              </li>
+            </ul>
+
+            {/* logo  */}
+
+            <div className="hidden md:block shrink-0">
+              <Link to="/">
+                <img src={logoWhite} alt="logo" />
+              </Link>
+            </div>
+
+            {/* second menu  */}
+
+            <ul className="flex flex-col md:items-center justify-start md:flex-row gap-6 md:gap-4 lg:gap-6">
+              <li className="">
+                <Link
+                  to="/"
+                  className="flex text-whiteHigh hover:text-primaryColor py-2 pl-4 hover:bg-navyDark md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100"
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="group relative">
+                <p
+                  className="group flex items-center text-whiteHigh hover:text-primaryColor py-2 pl-4 hover:bg-navyDark md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100 cursor-pointer "
+                  onClick={() => handleDropdown("shop")}
+                >
+                  <span>shop</span>
+                  <span
+                    className={`material-symbols-outlined duration-300 ${
+                      isSubmenuOpen["shop"]
+                        ? "rotate-180 md:rotate-0 md:group-hover:rotate-180"
+                        : "md:group-hover:rotate-180"
+                    }`}
+                  >
+                    expand_more
+                  </span>
+                </p>
+                <ul
+                  className={`static md:absolute bg-navySemi rounded-lg md:translate-y-6 md:invisible md:opacity-0 duration-300 md:group-hover:translate-y-0 md:group-hover:opacity-100 md:group-hover:visible ml-4 md:ml-0 overflow-hidden ${
+                    !isSubmenuOpen["shop"] && "max-h-0 md:max-h-max"
+                  }`}
+                  ref={(ref) => (submenuRef.current["shop"] = ref)}
+                  style={{
+                    maxHeight:
+                      isSubmenuOpen["shop"] &&
+                      `${submenuRef.current["shop"]?.scrollHeight}px`,
+                  }}
+                >
+                  <li>
+                    <Link
+                      to=""
+                      className="text-whiteHigh hover:text-primaryColor uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    >
+                      Page 1
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to=""
+                      className="text-whiteHigh hover:text-primaryColor uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    >
+                      Page 2
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="">
+                <Link
+                  to="/"
+                  className="flex text-whiteHigh hover:text-primaryColor py-2 pl-4 hover:bg-navyDark md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100"
+                >
+                  Station
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

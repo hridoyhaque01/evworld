@@ -3,7 +3,7 @@ import React from "react";
 function Banner() {
   return (
     <section className="w-10/12 mx-auto">
-      <div className="text-pureWhite bg-bannerBg bg-no-repeat bg-cover object-contain rounded-[40px] py-12 md:py-24 md:px-4 lg:py-32 lg:px-10 flex items-center justify-center">
+      <div className=" text-pureWhite bg-bannerBg bg-no-repeat bg-bottom bg-cover object-contain rounded-[40px] py-12 md:py-24 pl-0 pr-4 lg:py-32 lg:px-10 flex items-center justify-center">
         {/* details  */}
         <div className="flex flex-col justify-between gap-14 md:gap-20">
           <div className=" flex items-center  gap-x-1 -rotate-90 max-w-max max-h-max">
@@ -34,8 +34,8 @@ function Banner() {
         {/* heading  */}
 
         <div className="flex-1">
-          <div className="max-w-[200px] md:max-w-3xl  text-center mx-auto">
-            <h1 className="font-dmSans text-2xl md:text-6xl lg:text-8xl font-bold uppercase text-primaryColor">
+          <div className=" sm:max-w-sm md:max-w-3xl  text-center mx-auto">
+            <h1 className="font-clashBold sm:text-4xl md:text-6xl lg:text-8xl font-bold uppercase text-primaryColor">
               Drive beyond
             </h1>
             <p className="text-base md:text-2xl mb-10">

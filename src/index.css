@@ -2,16 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: ClashDisplay-Bold;
+  src: url("./Assets/Fonts/ClassDisplay/ClashDisplay-Bold.otf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
+@font-face {
+  font-family: ClashDisplay-Medium;
+  src: url("./Assets/Fonts/ClassDisplay/ClashDisplay-Medium.otf");
+}
+
+@font-face {
+  font-family: ClashDisplay-Regular;
+  src: url("./Assets/Fonts/ClassDisplay/ClashDisplay-Regular.otf");
+}
+
+@font-face {
+  font-family: ClashDisplay-Semibold;
+  src: url("./Assets/Fonts/ClassDisplay/ClashDisplay-Semibold.otf");
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}

@@ -1,12 +1,12 @@
 import React from "react";
-import { inovation, future, passin } from "../../../Assets/getImages";
+import { future, inovation, passin } from "../../../Assets/getImages";
 import AboutSingleItem from "./AboutSingleItem";
 
 function About() {
   return (
-    <section className="w-10/12 mx-auto mt-10">
+    <section className="w-10/12 mx-auto pt-10">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 ">
-        <div className="flex items-center lg:col-span-3 p-10 gap-4 bg-navySemi rounded-[40px]">
+        <div className="flex flex-col md:flex-row items-center lg:col-span-3  md:p-10 gap-4 md:bg-navySemi md:rounded-[40px]">
           {/* single about content  */}
           <AboutSingleItem
             icon={inovation}
@@ -15,7 +15,7 @@ function About() {
               through electric mobility."
           ></AboutSingleItem>
 
-          <div>
+          <div className="hidden md:block">
             <svg
               width="92"
               height="12"
@@ -40,7 +40,7 @@ function About() {
             texts="We believe that a greener future is possible, and we are committed to making it a reality."
           ></AboutSingleItem>
 
-          <div>
+          <div className="hidden md:block">
             <svg
               width="92"
               height="12"
@@ -65,8 +65,8 @@ function About() {
             texts="Our journey began with a passion for innovation and a drive to revolutionize transportation."
           ></AboutSingleItem>
         </div>
-        <div className="flex flex-col justify-center items-center text-center py-10 px-6 bg-whiteHigh rounded-[40px]">
-          <div className="max-w-[200px]">
+        <div className="flex flex-col justify-center items-center text-center py-10 px-6 bg-whiteHigh rounded-2xl md:rounded-[40px] ">
+          <div className="md:max-w-[200px]">
             <h4 className="font-clash text-3xl font-semibold text-blackHigh">
               Mission and Vision
             </h4>

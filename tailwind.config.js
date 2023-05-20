@@ -16,7 +16,7 @@ module.exports = {
       pureBlack: "#181A20",
       blackHigh: "#212035",
       blackSemi: "#424242",
-      blackMid: "#616161",
+      blackMid: "#6C6C6C",
       blackLow: "#757575",
       blackFadeDark: "#474747",
       blackFade: "#9E9E9E",
@@ -30,7 +30,17 @@ module.exports = {
     },
     fontFamily: {
       dmSans: ["DM Sans", "sans-serif"],
-      inter: ["Inter", "sans-serif"],
+      clashBold: ["ClashDisplay-Bold"],
+      clashMid: ["ClashDisplay-Medium"],
+      clashReg: ["ClashDisplay-Regular"],
+      clashSemi: ["ClashDisplay-Semibold"],
+    },
+
+    transitionDuration: {
+      100: "100ms",
+      200: "200ms",
+      300: "300ms",
+      400: "400ms",
     },
 
     backgroundImage: {
