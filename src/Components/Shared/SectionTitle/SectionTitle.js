@@ -6,7 +6,7 @@ const SectionTitle = ({ title, subtitle, texts }) => {
       <h2 className="text-base md:text-2xl lg:text-3xl text-whiteHigh font-clashSemi">
         {subtitle}
       </h2>
-      <h1 className="text-2xl md:text-4xl lg:text-6xl text-primaryColor font-clashBold">
+      <h1 className="text-base md:text-4xl lg:text-6xl text-primaryColor font-clashBold">
         {title}
       </h1>
       <p className="text-sm md:text-base lg:text-xl text-whiteHigh font-dmSans font-normal">

@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       navyDark: "#212035",
       navySemi: "#2B2949",
+      navyMid: "#4B4783",
 
       primaryColor: "#C1EF00",
       successColor: "2CC672",

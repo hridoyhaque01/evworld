@@ -1,17 +1,15 @@
 import React, { useEffect, useRef } from "react";
-import { braking } from "../../../Assets/getImages";
 import { useInView } from "react-intersection-observer";
+import { braking } from "../../../Assets/getImages";
 
 function BottomRightFeature() {
   const { ref, inView } = useInView({
     threshold: 0.5,
   });
   const svgRef = useRef();
-  const fadeRef = useRef();
 
   const animateSvg = () => {
     svgRef.current.classList.add("animate-svg");
-    fadeRef.current.classList.add("animate-text");
   };
 
   useEffect(() => {
@@ -47,7 +45,8 @@ function BottomRightFeature() {
       </div>
       <div
         className="flex items-center flex-row-reverse w-[6.4rem] sm:w-36 md:w-44 lg:w-52 xl:w-64 gap-1 lg:gap-2 ml-auto "
-        ref={fadeRef}
+        data-aos="fade-in"
+        data-aos-duration="3000"
       >
         <div>
           <h2 className="text-[0.624rem] sm:text-sm md:text-base text-whiteHigh">

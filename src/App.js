@@ -10,7 +10,9 @@ function App() {
   // aos animation
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
     AOS.refresh();
   }, []);
   return (

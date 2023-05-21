@@ -6,11 +6,9 @@ function CenterLaftFeature({ image, title, texts }) {
     threshold: 0.5,
   });
   const svgRef = useRef();
-  const fadeRef = useRef();
 
   const animateSvg = () => {
     svgRef.current.classList.add("animate-svg");
-    fadeRef.current.classList.add("animate-text");
   };
 
   useEffect(() => {
@@ -23,7 +21,8 @@ function CenterLaftFeature({ image, title, texts }) {
     <div className="relative" ref={ref}>
       <div
         className="flex items-center gap-1 md:gap-2 w-20 sm:w-24 md:w-36 lg:w-44 xl:w-56 "
-        ref={fadeRef}
+        data-aos="fade-in"
+        data-aos-duration="3000"
       >
         <div className="text-right">
           <h2 className="text-[0.5rem] sm:text-xs  xl:text-xl text-whiteHigh uppercase font-bold">
