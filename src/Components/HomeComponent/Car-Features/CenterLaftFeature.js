@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 
 function CenterLaftFeature({ image, title, texts }) {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const svgRef = useRef();
+  const fadeRef = useRef();
+
+  const animateSvg = () => {
+    svgRef.current.classList.add("animate-svg");
+    fadeRef.current.classList.add("animate-text");
+  };
+
+  useEffect(() => {
+    if (inView) {
+      animateSvg();
+    }
+  }, [inView]);
+
   return (
-    <div className="relative">
-      <div className="flex items-center gap-1 md:gap-2 w-20 sm:w-24 md:w-36 lg:w-44 xl:w-56">
+    <div className="relative" ref={ref}>
+      <div
+        className="flex items-center gap-1 md:gap-2 w-20 sm:w-24 md:w-36 lg:w-44 xl:w-56 "
+        ref={fadeRef}
+      >
         <div className="text-right">
           <h2 className="text-[0.5rem] sm:text-xs  xl:text-xl text-whiteHigh uppercase font-bold">
             {title}
@@ -17,70 +38,30 @@ function CenterLaftFeature({ image, title, texts }) {
         </div>
       </div>
 
-      <div className="-mt-6 md:-mt-20 lg:-mt-24 xl:-mt-20">
-        <div className="hidden xl:block">
-          <svg
-            height="104"
-            viewBox="0 0 376 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="xl:w-80 duration-300"
-          >
-            <path
-              d="M369.375 7.31464L270.176 102.734H0.000585318"
-              stroke="#C1EF00"
-              stroke-width="2"
-            />
-            <ellipse
-              cx="369.374"
-              cy="7.31532"
-              rx="6.62555"
-              ry="6.58067"
-              transform="rotate(180 369.374 7.31532)"
-              fill="#C1EF00"
-            />
-          </svg>
-        </div>
-        <div className="hidden md:block xl:hidden">
-          <svg
-            height="104"
-            viewBox="0 0 260 104"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="md:w-48 lg:w-64 duration-300"
-          >
-            <path
-              d="M253.789 7.58027L185.632 103H0.00119972"
-              stroke="#C1EF00"
-              stroke-width="2"
-            />
-            <circle
-              cx="252"
-              cy="8"
-              r="8"
-              transform="rotate(180 252 8)"
-              fill="#C1EF00"
-            />
-          </svg>
-        </div>
-        <div className="block md:hidden">
-          <svg
-            height="29"
-            viewBox="0 0 125 29"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-[6.4rem] sm:w-32 duration-300"
-          >
-            <path d="M120.293 4L88.0659 28H0.292972" stroke="#C1EF00" />
-            <circle
-              cx="120.293"
-              cy="4"
-              r="4"
-              transform="rotate(180 120.293 4)"
-              fill="#C1EF00"
-            />
-          </svg>
-        </div>
+      <div className="-mt-6 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-20  text-right">
+        <svg
+          viewBox="0 0 376 104"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-24 sm:w-32 md:w-48 lg:w-64 xl:w-80 duration-300"
+          ref={svgRef}
+        >
+          <path
+            d="M369.375 7.31464L270.176 102.734H0.000585318"
+            stroke="#C1EF00"
+            strokeWidth="2"
+            className="opacity-0"
+          />
+          <ellipse
+            cx="369.374"
+            cy="7.31532"
+            rx="6.62555"
+            ry="6.58067"
+            transform="rotate(180 369.374 7.31532)"
+            fill="#C1EF00"
+            className="opacity-0"
+          />
+        </svg>
       </div>
     </div>
   );
