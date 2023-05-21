@@ -3,15 +3,15 @@ import { eco } from "../../../Assets/getImages";
 
 function BotttomLeftFeature() {
   return (
-    <div className="flex flex-col gap-4">
-      <div className="">
-        <div className="hidden 2xl:block">
+    <div className="flex flex-col">
+      <div>
+        <div className="hidden xl:block">
           <svg
-            width="454"
             height="125"
             viewBox="0 0 454 125"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="xl:w-96 duration-300"
           >
             <path
               d="M446 8L326.223 124H7.86781e-06"
@@ -27,13 +27,14 @@ function BotttomLeftFeature() {
             />
           </svg>
         </div>
-        <div className="hidden lg:block 2xl:hidden">
+
+        <div className="hidden md:block xl:hidden">
           <svg
-            width="313"
             height="119"
             viewBox="0 0 313 119"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="md:w-64 lg:w-72"
           >
             <path
               d="M306.436 2L224.14 118H0.000174046"
@@ -49,13 +50,14 @@ function BotttomLeftFeature() {
             />
           </svg>
         </div>
-        <div className="block lg:hidden">
+
+        <div className="block md:hidden">
           <svg
-            width="144"
             height="53"
             viewBox="0 0 187 53"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="w-[8.2rem] sm:w-48"
           >
             <path d="M184 4L134.585 52H3.8147e-06" stroke="#C1EF00" />
             <circle
@@ -68,17 +70,17 @@ function BotttomLeftFeature() {
           </svg>
         </div>
       </div>
-      <div className="max-w-36 lg:w-56 2xl:w-80 flex items-center gap-2">
+      <div className="flex items-center w-[6.4rem] sm:w-36 md:w-44 lg:w-52 xl:w-64 gap-1 lg:gap-2">
         <div className="text-right">
-          <h4 className="text-[10px] lg:text-base 2xl:text-2xl font-bold text-whiteHigh ">
+          <h2 className="text-[0.624rem] sm:text-sm md:text-base text-whiteHigh">
             Car Size
-          </h4>
-          <p className="text-[8px] lg:text-sm 2xl:text-base text-justify text-whiteHigh">
+          </h2>
+          <p className="text-whiteHigh text-[0.43rem] sm:text-[0.624rem] md:text-xs ">
             Compact hatchback seats four with 4m length and 1.7m width.
           </p>
         </div>
         <div className="shrink-0">
-          <img src={eco} alt="car feature" className="w-6 lg:w-auto" />
+          <img src={eco} alt="feature" className="w-7 md:w-14 " />
         </div>
       </div>
     </div>

@@ -14,11 +14,20 @@ import motor from "./images/car-feature/motor.png";
 import safety from "./images/car-feature/safety.png";
 import wheels from "./images/car-feature/wheels.png";
 
+import station from "./images/analytics/station.png";
+import plant from "./images/analytics/plant.png";
+import customer from "./images/analytics/customer.png";
+import carRoad from "./images/analytics/car.png";
+
 import logoWhite from "./images/logo/logo-white.png";
 import memberFour from "./images/team/memberFour.png";
 import memberOne from "./images/team/memberOne.png";
 import memberThree from "./images/team/memberThree.png";
 import memberTwo from "./images/team/memberTwo.png";
+
+import productCar from "./images/products/productCar.png";
+import productCharging from "./images/products/productCharging.png";
+import productStation from "./images/products/productStation.png";
 
 export {
   logoWhite,
@@ -36,6 +45,13 @@ export {
   motor,
   wheels,
   car,
+  station,
+  plant,
+  productCar,
+  productCharging,
+  productStation,
+  customer,
+  carRoad,
   memberOne,
   memberTwo,
   memberThree,

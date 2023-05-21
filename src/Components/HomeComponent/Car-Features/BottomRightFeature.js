@@ -3,15 +3,15 @@ import { braking } from "../../../Assets/getImages";
 
 function BottomRightFeature() {
   return (
-    <div className="flex flex-col gap-4">
-      <div className="">
-        <div className="hidden 2xl:block">
+    <div className="flex flex-col">
+      <div>
+        <div className="hidden xl:block">
           <svg
-            width="454"
             height="125"
             viewBox="0 0 454 125"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="xl:w-96 duration-300"
           >
             <path d="M8 8L127.777 124H454" stroke="#C1EF00" stroke-width="2" />
             <circle
@@ -23,13 +23,14 @@ function BottomRightFeature() {
             />
           </svg>
         </div>
-        <div className="hidden lg:block 2xl:hidden">
+
+        <div className="hidden md:block xl:hidden">
           <svg
-            width="312"
             height="119"
             viewBox="0 0 312 119"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="md:w-64 lg:w-72 duration-300"
           >
             <path
               d="M5.26562 2L87.5616 118H311.701"
@@ -45,13 +46,14 @@ function BottomRightFeature() {
             />
           </svg>
         </div>
-        <div className="block lg:hidden">
+
+        <div className="block md:hidden">
           <svg
-            width="120"
             height="54"
             viewBox="0 0 189 54"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="w-[8.2rem] sm:w-48 duration-300"
           >
             <path d="M4.20312 5L53.618 53H188.203" stroke="#C1EF00" />
             <ellipse
@@ -65,17 +67,17 @@ function BottomRightFeature() {
           </svg>
         </div>
       </div>
-      <div className="w-36 lg:w-56 2xl:w-80 flex items-center gap-2 ml-auto">
+      <div className="flex items-center flex-row-reverse w-[6.4rem] sm:w-36 md:w-44 lg:w-52 xl:w-64 gap-1 lg:gap-2 ml-auto">
         <div className="">
-          <h4 className="text-[10px] lg:text-base 2xl:text-2xl font-bold text-whiteHigh ">
+          <h2 className="text-[0.624rem] sm:text-sm md:text-base text-whiteHigh">
             Car Size
-          </h4>
-          <p className="text-[8px] lg:text-sm 2xl:text-base text-justify text-whiteHigh">
+          </h2>
+          <p className="text-whiteHigh text-[0.43rem] sm:text-[0.624rem] md:text-xs ">
             Compact hatchback seats four with 4m length and 1.7m width.
           </p>
         </div>
         <div className="shrink-0">
-          <img src={braking} alt="car feature" className="w-6 lg:w-auto" />
+          <img src={braking} alt="feature" className="w-7 md:w-14 " />
         </div>
       </div>
     </div>

@@ -18,17 +18,17 @@ function CarFeature() {
           texts="Our electric car is designed to provide a smooth and comfortable ride while"
         ></SectionTitle>
 
-        <div className="mt-20">
+        <div className="mt-10 sm:mt-20">
           {/* first row  */}
-          <div className="flex items-center justify-between gap-4 lg:w-10/12 mx-auto">
+          <div className="flex items-center justify-center gap-4 md:gap-8 xl:gap-20 ">
             <TopLeftFeature></TopLeftFeature>
             <TopRightFeature></TopRightFeature>
           </div>
 
           {/* center row  */}
 
-          <div className="flex items-center justify-center md:justify-between gap-10 my-8">
-            <div className="flex flex-col lg:gap-20 2xl:gap-36">
+          <div className="flex justify-center items-center gap-2 sm:gap-10  sm:my-8">
+            <div className="flex flex-col justify-between gap-3 md:gap-12 lg:gap-20 2xl:gap-36 h-full ">
               <CenterLaftFeature
                 image={wheels}
                 title="wheels"
@@ -45,14 +45,10 @@ function CarFeature() {
                 texts={`21" inch alloy wheels, low-rolling resistance tires.`}
               ></CenterLaftFeature>
             </div>
-            <div className="">
-              <img
-                src={car}
-                alt="car feature"
-                className="w-[80px] sm:w-[144px] lg:w-[274px] 2xl:w-auto"
-              />
+            <div className="shrink-0 w-[80px] sm:w-44 md:w-[274px] 2xl:w-auto">
+              <img src={car} alt="car feature" className="" />
             </div>
-            <div className="flex flex-col sm:gap-10 lg:gap-20 2xl:gap-36">
+            <div className="flex flex-col gap-5 md:gap-12 lg:gap-20 2xl:gap-36">
               <CenterRightFeature
                 image={acceleration}
                 title="Acceleration"
@@ -71,7 +67,7 @@ function CarFeature() {
             </div>
           </div>
 
-          <div className="flex items-center justify-between gap-4 lg:w-10/12 mx-auto">
+          <div className="flex items-center justify-center gap-4 md:gap-8 xl:gap-20 ">
             <BotttomLeftFeature></BotttomLeftFeature>
             <BottomRightFeature></BottomRightFeature>
           </div>

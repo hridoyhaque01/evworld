@@ -6,7 +6,11 @@ function TeamSingleMember({ details }) {
   return (
     <div className="flex flex-col gap-3 px-3 pb-3 pt-8 bg-navySemi rounded-2xl border-2 border-transparent group hover:border-primaryColor duration-200 ">
       <div>
-        <img src={image} alt="team" className="w-40 mx-auto" />
+        <img
+          src={image}
+          alt="team"
+          className="w-32 xl:w-40 mx-auto saturate-0 group-hover:saturate-100 duration-300"
+        />
       </div>
       <div className="text-center md:text-left bg-whiteHigh group-hover:bg-primaryColor rounded-lg px-2 sm:px-4 py-6 ">
         <div className="flex flex-col md:flex-row gap-y-2 items-center justify-between">

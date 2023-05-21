@@ -47,7 +47,7 @@ export const Team = () => {
   ];
 
   return (
-    <section className="pt-10 md:pt-20 lg:pt-28">
+    <section className="py-10 md:py-20 lg:py-28">
       <div className="w-10/12 mx-auto">
         <SectionTitle
           title="Meet Our Team"

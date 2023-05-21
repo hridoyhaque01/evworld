@@ -3,27 +3,28 @@ import React from "react";
 function CenterLaftFeature({ image, title, texts }) {
   return (
     <div className="relative">
-      <div className="w-24 lg:w-48 2xl:w-72 flex items-center gap-2">
+      <div className="flex items-center gap-1 md:gap-2 w-20 sm:w-24 md:w-36 lg:w-44 xl:w-56">
         <div className="text-right">
-          <h4 className="font-bold text-[10px] lg:text-sm 2xl:text-xl text-whiteHigh uppercase">
+          <h2 className="text-[0.5rem] sm:text-xs  xl:text-xl text-whiteHigh uppercase font-bold">
             {title}
-          </h4>
-          <p className="font-medium text-[8px] lg:text-[10px] 2xl:text-sm text-whiteHigh text-justify">
+          </h2>
+          <p className="text-whiteHigh text-[0.43rem] sm:text-[0.624rem] md:text-xs text-justify">
             {texts}
           </p>
         </div>
-        <div className="shrink-0">
-          <img src={image} alt="car feature" className="w-4 lg:w-auto" />
+        <div className="shrink-0 ">
+          <img src={image} alt="feature" className="w-5 md:w-16" />
         </div>
       </div>
-      <div className="absolute -top-4">
-        <div className="hidden 2xl:block">
+
+      <div className="-mt-6 md:-mt-20 lg:-mt-24 xl:-mt-20">
+        <div className="hidden xl:block">
           <svg
-            width="376"
             height="104"
             viewBox="0 0 376 104"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="xl:w-80 duration-300"
           >
             <path
               d="M369.375 7.31464L270.176 102.734H0.000585318"
@@ -40,13 +41,13 @@ function CenterLaftFeature({ image, title, texts }) {
             />
           </svg>
         </div>
-        <div className="hidden lg:block 2xl:hidden">
+        <div className="hidden md:block xl:hidden">
           <svg
-            width="260"
             height="104"
             viewBox="0 0 260 104"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="md:w-48 lg:w-64 duration-300"
           >
             <path
               d="M253.789 7.58027L185.632 103H0.00119972"
@@ -62,13 +63,13 @@ function CenterLaftFeature({ image, title, texts }) {
             />
           </svg>
         </div>
-        <div className="block lg:hidden">
+        <div className="block md:hidden">
           <svg
             height="29"
             viewBox="0 0 125 29"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-100 sm:w-[120]"
+            className="w-[6.4rem] sm:w-32 duration-300"
           >
             <path d="M120.293 4L88.0659 28H0.292972" stroke="#C1EF00" />
             <circle

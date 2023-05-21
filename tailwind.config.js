@@ -45,6 +45,7 @@ module.exports = {
 
     backgroundImage: {
       bannerBg: "url('./Assets/images/banner.png')",
+      analyticsBg: "url('./Assets/images/analytics/analytics.png')",
     },
   },
   plugins: [require("daisyui"), require("preline/plugin")],

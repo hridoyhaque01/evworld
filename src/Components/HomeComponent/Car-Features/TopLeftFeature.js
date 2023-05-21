@@ -3,28 +3,28 @@ import { carSize } from "../../../Assets/getImages";
 
 function TopLeftFeature() {
   return (
-    <div className="flex flex-col gap-4">
-      <div className="w-36 lg:w-56 2xl:w-80 flex items-center gap-2">
+    <div className="flex flex-col">
+      <div className="flex items-center w-[6.4rem] sm:w-36 md:w-44 lg:w-52 xl:w-64 gap-1 lg:gap-2">
         <div className="text-right">
-          <h4 className="text-[10px] lg:text-base 2xl:text-2xl font-bold text-whiteHigh ">
+          <h2 className="text-[0.624rem] sm:text-sm md:text-base text-whiteHigh">
             Car Size
-          </h4>
-          <p className="text-[8px] lg:text-sm 2xl:text-base text-justify text-whiteHigh">
+          </h2>
+          <p className="text-whiteHigh text-[0.43rem] sm:text-[0.624rem] md:text-xs ">
             Compact hatchback seats four with 4m length and 1.7m width.
           </p>
         </div>
         <div className="shrink-0">
-          <img src={carSize} alt="car feature" className="w-6 lg:w-auto" />
+          <img src={carSize} alt="feature" className="w-7 md:w-14 " />
         </div>
       </div>
-      <div className="">
-        <div className="hidden 2xl:block">
+      <div>
+        <div className="hidden xl:block">
           <svg
-            width="441"
             height="121"
             viewBox="0 0 441 121"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="xl:w-96 duration-300"
           >
             <path
               d="M433.229 113.258L316.881 1H-0.000546932"
@@ -41,13 +41,14 @@ function TopLeftFeature() {
             />
           </svg>
         </div>
-        <div className="hidden lg:block 2xl:hidden">
+
+        <div className="hidden md:block xl:hidden">
           <svg
-            width="306"
             height="121"
             viewBox="0 0 306 121"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="md:w-64 lg:w-72 duration-300"
           >
             <path
               d="M298.369 113.258L218.43 1H0.708353"
@@ -63,13 +64,14 @@ function TopLeftFeature() {
             />
           </svg>
         </div>
-        <div className="block lg:hidden">
+
+        <div className="block md:hidden">
           <svg
             height="53"
             viewBox="0 0 189 53"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-[120px] sm:w-[189px]"
+            className="w-[8.2rem] sm:w-48 duration-300"
           >
             <path d="M184 49L134.585 1H2.20537e-06" stroke="#C1EF00" />
             <circle
