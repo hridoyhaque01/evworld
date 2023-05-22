@@ -7,7 +7,7 @@ function Customer({ details }) {
 
   const stars = getRatings(rating);
   return (
-    <div className="flex flex-col gap-3 p-4 bg-navySemi rounded-2xl duration-200 ">
+    <div className="flex flex-col gap-3 p-4 lg:p-10 bg-navySemi rounded-2xl lg:rounded-3xl duration-200 ">
       <div>
         <img
           src={image}
