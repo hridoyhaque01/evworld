@@ -2,15 +2,15 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
-import TeamSingleMember from "./TeamSingleMember";
 import db from "../../../Assets/db.json";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import TeamSingleMember from "./TeamSingleMember";
 
 const Team = () => {
   const { teamMembers } = db || {};
 
   return (
-    <section className="px-6 lg:px-28 2xl:px-32 py-10 md:py-20 lg:py-28">
+    <section className="px-6 lg:px-28 2xl:px-32 pt-10 md:pt-20 lg:pt-28">
       <SectionTitle
         title="Meet Our Team"
         texts="Our team of experts is dedicated to bringing you the best in electric mobility."
@@ -37,6 +37,7 @@ const Team = () => {
               spaceBetween: 24,
             },
           }}
+          className="pb-10 md:pb-20 lg:pb-28"
         >
           {teamMembers?.map((teamMember) => (
             <SwiperSlide key={teamMember.id}>

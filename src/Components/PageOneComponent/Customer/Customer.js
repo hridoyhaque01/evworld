@@ -1,6 +1,6 @@
 import React from "react";
 import getRatings from "../../../utils/getRatings";
-import Rating from "../../Shared/Rating/Rating";
+import Rating from "../Shared/Rating/Rating";
 
 function Customer({ details }) {
   const { name, rating, description, image } = details || {};

@@ -14,8 +14,8 @@ import CenterRightFeature from "./CenterRightFeature";
 import TopLeftFeature from "./TopLeftFeature";
 import TopRightFeature from "./TopRightFeature";
 
+import SectionTitleWithSubtitle from "../Shared/SectionTitle/SectionTitleWithSubtitle";
 import "./carFeature.css";
-import SectionTitleWithSubtitle from "../../Shared/SectionTitle/SectionTitleWithSubtitle";
 
 function CarFeature() {
   return (

@@ -14,8 +14,8 @@ import CenterRightFeature from "./CenterRightFeature";
 import TopLeftFeature from "./TopLeftFeature";
 import TopRightFeature from "./TopRightFeature";
 
+import SectionTitleWithSubtitle from "../Shared/SectionTitle/SectionTitleWithSubtitle";
 import "./carFeature.css";
-import SectionTitleWithSubtitle from "../../Shared/SectionTitle/SectionTitleWithSubtitle";
 
 function CarFeature() {
   return (
@@ -24,7 +24,6 @@ function CarFeature() {
         <SectionTitleWithSubtitle
           title="The Next Generation of Sustainable Driving"
           subtitle="Elvo 465 St Super"
-          texts="Our electric car is designed to provide a smooth and comfortable ride while"
         ></SectionTitleWithSubtitle>
 
         <div className="mt-10 sm:mt-20">

@@ -3,7 +3,7 @@ import React from "react";
 function AboutSingleItem({ icon, title, texts }) {
   return (
     <div className="text-center text-navyDark  w-full p-6 md:p-0 rounded-2xl md:rounded-none duration-300">
-      <div className="">
+      <div className="bg-navyDark inline-block p-4 rounded-full">
         <img
           src={icon}
           alt="about"

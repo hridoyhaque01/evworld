@@ -2,9 +2,9 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
-import TeamSingleMember from "./TeamSingleMember";
 import db from "../../../Assets/db.json";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import TeamSingleMember from "./TeamSingleMember";
 
 const Team = () => {
   const { teamMembers } = db || {};

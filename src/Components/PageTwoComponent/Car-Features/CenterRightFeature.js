@@ -19,15 +19,15 @@ function CenterRightFeature({ image, title, texts }) {
   return (
     <div className="relative" ref={ref}>
       <div
-        className="flex flex-row-reverse items-center gap-1 md:gap-2 w-16 sm:w-24 md:w-36 lg:w-44 xl:w-56 ml-auto duration-300 "
+        className="flex flex-row-reverse items-center gap-1 md:gap-2 w-16 sm:w-24 md:w-36 lg:w-44 xl:w-56 ml-auto duration-300 text-blackFadeDark"
         data-aos="fade-in"
         data-aos-duration="3000"
       >
         <div>
-          <h2 className="text-[0.5rem] sm:text-xs  xl:text-xl text-whiteHigh uppercase font-bold duration-300">
+          <h2 className="text-[0.5rem] sm:text-xs  xl:text-xl uppercase font-bold duration-300">
             {title}
           </h2>
-          <p className="text-whiteHigh text-[0.43rem] sm:text-[0.624rem] md:text-xs text-justify duration-300">
+          <p className="text-[0.43rem] sm:text-[0.624rem] md:text-xs text-justify duration-300">
             {texts}
           </p>
         </div>

@@ -5,7 +5,7 @@ import AboutSingleItem from "./AboutSingleItem";
 function About() {
   return (
     <section className="">
-      <div className="flex flex-col md:flex-row items-center md:p-10 gap-4 shadow-md">
+      <div className="flex flex-col md:flex-row items-center md:p-10 gap-4 lg:gap-12 shadow-md">
         {/* single about content  */}
         <AboutSingleItem
           icon={inovation}

@@ -20,15 +20,15 @@ function CenterLaftFeature({ image, title, texts }) {
   return (
     <div className="relative" ref={ref}>
       <div
-        className="flex items-center gap-1 md:gap-2 w-20 sm:w-24 md:w-36 lg:w-44 xl:w-56 "
+        className="flex items-center gap-1 md:gap-2 w-20 sm:w-24 md:w-36 lg:w-44 xl:w-56 text-blackFadeDark"
         data-aos="fade-in"
         data-aos-duration="3000"
       >
         <div className="text-right">
-          <h2 className="text-[0.5rem] sm:text-xs  xl:text-xl text-whiteHigh uppercase font-bold">
+          <h2 className="text-[0.5rem] sm:text-xs  xl:text-xl uppercase font-bold">
             {title}
           </h2>
-          <p className="text-whiteHigh text-[0.43rem] sm:text-[0.624rem] md:text-xs text-justify">
+          <p className="text-[0.43rem] sm:text-[0.624rem] md:text-xs text-justify">
             {texts}
           </p>
         </div>

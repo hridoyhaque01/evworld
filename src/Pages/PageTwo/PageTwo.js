@@ -1,15 +1,15 @@
 import React from "react";
 import About from "../../Components/PageTwoComponent/About/About";
 import Analytics from "../../Components/PageTwoComponent/Analytics/Analytics";
-import CarFeature from "../../Components/PageTwoComponent/Car-Features/CarFeature";
-import CustomerList from "../../Components/PageTwoComponent/Customer/CustomerList";
-import ProductList from "../../Components/PageTwoComponent/Products/ProductList";
-import Team from "../../Components/PageTwoComponent/Team/Team";
-import Contact from "../../Components/PageTwoComponent/Contact/Contact";
-import News from "../../Components/PageTwoComponent/News/News";
-import NavbarTwo from "../../Components/PageTwoComponent/Shared/Navbar/NavbarTwo";
-import FooterTwo from "../../Components/PageTwoComponent/Shared/Footer/FooterTwo";
 import Banner from "../../Components/PageTwoComponent/Banners/Banner";
+import CarFeature from "../../Components/PageTwoComponent/Car-Features/CarFeature";
+import Contact from "../../Components/PageTwoComponent/Contact/Contact";
+import CustomerList from "../../Components/PageTwoComponent/Customer/CustomerList";
+import News from "../../Components/PageTwoComponent/News/News";
+import Products from "../../Components/PageTwoComponent/Products/Products";
+import FooterTwo from "../../Components/PageTwoComponent/Shared/Footer/FooterTwo";
+import NavbarTwo from "../../Components/PageTwoComponent/Shared/Navbar/NavbarTwo";
+import Team from "../../Components/PageTwoComponent/Team/Team";
 
 function PageTwo() {
   return (
@@ -19,8 +19,8 @@ function PageTwo() {
         <Banner></Banner>
         <About></About>
         <Team></Team>
+        <Products></Products>
         <Analytics></Analytics>
-        <ProductList></ProductList>
         <CarFeature></CarFeature>
         <CustomerList></CustomerList>
         <Contact></Contact>

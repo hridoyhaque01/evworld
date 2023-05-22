@@ -1,11 +1,11 @@
 import React from "react";
-import { station, carRoad, customer, plant } from "../../../Assets/getImages";
+import { carRoad, customer, plant, station } from "../../../Assets/getImages";
 import AnalyticsSingleItem from "./AnalyticsSingleItem";
 
 function Analytics() {
   return (
-    <section className="w-full bg-analyticsBg py-14 px-6">
-      <div className="grid grid-cols-4 gap-x-4 md:gap-x-10">
+    <section className="px-6 lg:px-28 2xl:px-32 pt-10 sm:pt-20">
+      <div className="grid grid-cols-4 gap-x-4 sm:gap-x-6">
         <AnalyticsSingleItem
           image={station}
           suffix="k"

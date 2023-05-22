@@ -1,6 +1,6 @@
 import React from "react";
-import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import { contact } from "../../../Assets/getImages";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 
 function Contact() {
   return (

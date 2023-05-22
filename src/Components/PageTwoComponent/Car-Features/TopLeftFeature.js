@@ -20,15 +20,15 @@ function TopLeftFeature() {
   return (
     <div className="flex flex-col" ref={ref}>
       <div
-        className="flex items-center w-[6.4rem] sm:w-36 md:w-44 lg:w-52 xl:w-64 gap-1 lg:gap-2 duration-300 "
+        className="flex items-center w-[6.4rem] sm:w-36 md:w-44 lg:w-52 xl:w-64 gap-1 lg:gap-2 duration-300 text-blackFadeDark"
         data-aos="fade-in"
         data-aos-duration="3000"
       >
         <div className="text-right">
-          <h2 className="text-[0.624rem] sm:text-sm md:text-base text-whiteHigh duration-300">
+          <h2 className="text-[0.624rem] sm:text-sm md:text-base duration-300">
             Car Size
           </h2>
-          <p className="text-whiteHigh text-[0.43rem] sm:text-[0.624rem] md:text-xs duration-300">
+          <p className="text-[0.43rem] sm:text-[0.624rem] md:text-xs duration-300">
             Compact hatchback seats four with 4m length and 1.7m width.
           </p>
         </div>

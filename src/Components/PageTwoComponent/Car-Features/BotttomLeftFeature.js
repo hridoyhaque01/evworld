@@ -45,15 +45,15 @@ function BotttomLeftFeature() {
         </svg>
       </div>
       <div
-        className="flex items-center w-[6.4rem] sm:w-36 md:w-44 lg:w-52 xl:w-64 gap-1 lg:gap-2 "
+        className="flex items-center w-[6.4rem] sm:w-36 md:w-44 lg:w-52 xl:w-64 gap-1 lg:gap-2 text-blackFadeDark"
         data-aos="fade-in"
         data-aos-duration="3000"
       >
         <div className="text-right">
-          <h2 className="text-[0.624rem] sm:text-sm md:text-base text-whiteHigh">
+          <h2 className="text-[0.624rem] sm:text-sm md:text-base ">
             Eco-Friendly
           </h2>
-          <p className="text-whiteHigh text-[0.43rem] sm:text-[0.624rem] md:text-xs ">
+          <p className="text-[0.43rem] sm:text-[0.624rem] md:text-xs ">
             Zero emissions, eco-friendly driving.
           </p>
         </div>

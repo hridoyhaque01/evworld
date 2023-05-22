@@ -1,8 +1,8 @@
 import React from "react";
-import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
-import db from "../../../Assets/db.json";
-import NewsSingleItem from "./NewsSingleItem";
 import { Swiper, SwiperSlide } from "swiper/react";
+import db from "../../../Assets/db.json";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import NewsSingleItem from "./NewsSingleItem";
 
 function News() {
   const { news } = db || {};

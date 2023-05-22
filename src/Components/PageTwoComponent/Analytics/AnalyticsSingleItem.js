@@ -8,7 +8,10 @@ function AnalyticsSingleItem({ image, count, title, suffix }) {
     triggerOnce: true,
   });
   return (
-    <div className="flex flex-col items-center" ref={ref}>
+    <div
+      className="flex flex-col items-center bg-primaryColor py-4 px-2 sm:py-6"
+      ref={ref}
+    >
       <div className="">
         <img
           src={image}
