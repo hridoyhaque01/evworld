@@ -1,0 +1,124 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Robert Fox",
+      "description": "I love my [Car Model Name]. It's the perfect car for my daily commute, and I feel good knowing that I'm doing my part for the environment.",
+      "image": "./images/customers/customerOne.png",
+      "rating": 5
+    },
+
+    {
+      "id": 2,
+      "name": "Carissa Cooper",
+      "description": "I love my [Car Model Name]. It's the perfect car for my daily commute, and I feel good knowing that I'm doing my part for the environment.",
+      "image": "./images/customers/customerTwo.png",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "Sophia Loren",
+      "description": "I love my [Car Model Name]. It's the perfect car for my daily commute, and I feel good knowing that I'm doing my part for the environment.",
+      "image": "./images/customers/customerThree.png",
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "name": "Robert Fox",
+      "description": "I love my [Car Model Name]. It's the perfect car for my daily commute, and I feel good knowing that I'm doing my part for the environment.",
+      "image": "./images/customers/customerOne.png",
+      "rating": 5
+    },
+
+    {
+      "id": 5,
+      "name": "Carissa Cooper",
+      "description": "I love my [Car Model Name]. It's the perfect car for my daily commute, and I feel good knowing that I'm doing my part for the environment.",
+      "image": "./images/customers/customerTwo.png",
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "name": "Sophia Loren",
+      "description": "I love my [Car Model Name]. It's the perfect car for my daily commute, and I feel good knowing that I'm doing my part for the environment.",
+      "image": "./images/customers/customerOne.png",
+      "rating": 3
+    }
+  ],
+  "teamMembers": [
+    {
+      "id": 1,
+      "name": "Theresa Webb",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberOne.png"
+    },
+    {
+      "id": 2,
+      "name": "Kathryn Murphy",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/membertwo.png"
+    },
+    {
+      "id": 3,
+      "name": "Devon Lane",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberThree.png"
+    },
+    {
+      "id": 4,
+      "name": "Brooklyn Simmons",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberFour.png"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Consequat vestibulum enim",
+      "texts": "Etiam accumsan turpis ultrics felis rutrum, feugiat iaculis porttitor.",
+      "image": "./images/news/newsOne.png"
+    },
+    {
+      "id": 2,
+      "title": "Consequat vestibulum enim",
+      "texts": "Etiam accumsan turpis ultrics felis rutrum, feugiat iaculis porttitor.",
+      "image": "./images/news/newsTwo.png"
+    },
+    {
+      "id": 3,
+      "title": "Consequat vestibulum enim",
+      "texts": "Etiam accumsan turpis ultrics felis rutrum, feugiat iaculis porttitor.",
+      "image": "./images/news/newsThree.png"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": "./images/products/productCar.png",
+      "title": "cars"
+    },
+    {
+      "id": 2,
+      "image": "./images/products/productCharging.pngpng",
+      "title": "cars"
+    },
+    {
+      "id": 3,
+      "image": "./images/products/productStation.png.png",
+      "title": "cars"
+    },
+    {
+      "id": 4,
+      "image": "./images/products/productCharging.png",
+      "title": "cars"
+    }
+  ]
+}

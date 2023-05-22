@@ -33,6 +33,8 @@ import customerOne from "./images/customers/customerOne.png";
 import customerThree from "./images/customers/CustomerThree.png";
 import customerTwo from "./images/customers/CustomerTwo.png";
 
+import contact from "./images/contact/contact.png";
+
 export {
   logoWhite,
   future,
@@ -63,4 +65,5 @@ export {
   memberTwo,
   memberThree,
   memberFour,
+  contact,
 };

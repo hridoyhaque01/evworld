@@ -16,7 +16,7 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <div className="bg-navyDark">
+    <div className="">
       <RouterProvider router={Router}></RouterProvider>
     </div>
   );

@@ -1,11 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import TopNavbar from "../Components/Shared/TopNavbar/TopNavbar";
 
 export default function Main() {
   return (
-    <div className="bg-navyDark">
-      <TopNavbar></TopNavbar>
+    <div className=" max-w-[1440px] mx-auto relative">
       <Outlet></Outlet>
     </div>
   );
