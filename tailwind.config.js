@@ -26,7 +26,7 @@ module.exports = {
       whiteHigh: "#FAFAFA",
       whiteSemi: "#F5F5F5",
       whiteMid: "#EEEEEE",
-      whiteLow: "#E0E0E0",
+      whiteLow: "#ACACAC",
       whiteFade: "#BDBDBD",
     },
     fontFamily: {

@@ -9,16 +9,24 @@ function Customer({ details }) {
   return (
     <div className="flex flex-col gap-3 p-4 bg-navySemi rounded-2xl duration-200 ">
       <div>
-        <img src={image} alt="customer" />
+        <img
+          src={image}
+          alt="customer"
+          className="w-12 md:w-auto duration-300"
+        />
       </div>
       <div className="mt-4">
         <div className="flex items-center gap-1">
-          {stars?.map((star) => (
-            <Rating filled={star}></Rating>
+          {stars?.map((star, i) => (
+            <Rating filled={star} key={i}></Rating>
           ))}
         </div>
-        <p className="text-xs text-whiteHigh mt-2 mb-4">{description} </p>
-        <h4 className="text-sm font-medium text-whiteHigh">{name}</h4>
+        <p className="text-xs md:text-xl text-blackLow mt-2 mb-4">
+          {description}{" "}
+        </p>
+        <h4 className="text-sm md:text-2xl font-medium md:font-bold text-whiteHigh">
+          {name}
+        </h4>
       </div>
     </div>
   );

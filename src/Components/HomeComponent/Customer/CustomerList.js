@@ -1,6 +1,7 @@
 // import Swiper core and required modules
 
 import { Pagination } from "swiper";
+import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   customerOne,
@@ -8,8 +9,7 @@ import {
   customerTwo,
 } from "../../../Assets/getImages";
 import Customer from "./Customer";
-// import "./customer.css";
-import "swiper/css/pagination";
+import "./customer.css";
 
 export const CustomerList = () => {
   const customers = [
@@ -63,31 +63,6 @@ export const CustomerList = () => {
       image: customerThree,
       rating: 3,
     },
-    {
-      id: 7,
-      name: "Robert Fox",
-      description:
-        "I love my [Car Model Name]. It's the perfect car for my daily commute, and I feel good knowing that I'm doing my part for the environment.",
-      image: customerOne,
-      rating: 5,
-    },
-
-    {
-      id: 8,
-      name: "Carissa Cooper",
-      description:
-        "I love my [Car Model Name]. It's the perfect car for my daily commute, and I feel good knowing that I'm doing my part for the environment.",
-      image: customerTwo,
-      rating: 4,
-    },
-    {
-      id: 9,
-      name: "Sophia Loren",
-      description:
-        "I love my [Car Model Name]. It's the perfect car for my daily commute, and I feel good knowing that I'm doing my part for the environment.",
-      image: customerThree,
-      rating: 3,
-    },
   ];
 
   return (
@@ -104,22 +79,19 @@ export const CustomerList = () => {
             slidesPerView={1}
             spaceBetween={12}
             pagination={{ clickable: true }}
+            className="pb-16"
             breakpoints={{
               430: {
                 slidesPerView: 2,
                 spaceBetween: 16,
               },
               1024: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 24,
               },
               1200: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 12,
-              },
-              1400: {
-                slidesPerView: 4,
-                spaceBetween: 24,
               },
             }}
           >

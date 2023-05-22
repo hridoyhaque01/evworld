@@ -12,8 +12,6 @@ function BotttomLeftFeature() {
     svgRef.current.classList.add("animate-svg");
   };
 
-  console.log(svgRef);
-
   useEffect(() => {
     if (inView) {
       animateSvg();

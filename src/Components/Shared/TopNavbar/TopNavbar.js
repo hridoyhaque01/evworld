@@ -45,7 +45,7 @@ function TopNavbar() {
         <div
           className={`fixed top-0 right-0 md:relative h-full bg-navySemi ${
             toggleMenu ? "w-80" : "w-0 md:w-full"
-          } md:bg-transparent md:overflow-visible overflow-hidden duration-300`}
+          } md:bg-transparent md:overflow-visible overflow-hidden `}
         >
           <div
             className={`flex flex-col justify-start md:flex-row md:justify-between md:items-center gap-6 md:gap-4 lg:gap-6  p-8 md:p-0`}
