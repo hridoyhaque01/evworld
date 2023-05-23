@@ -9,14 +9,14 @@ function AnalyticsSingleItem({ image, count, title, suffix }) {
   });
   return (
     <div
-      className="flex flex-col items-center bg-primaryColor py-4 px-2 sm:py-6"
+      className="flex flex-col items-center bg-pureWhite py-6 px-2 shadow-xl rounded-2xl"
       ref={ref}
     >
       <div className="">
         <img
           src={image}
           alt="analytics"
-          className="w-14 h-14 md:w-28 xl:w-32 md:h-28 xl:h-32 duration-300 rounded-full"
+          className="w-10 h-10 md:w-28 xl:w-32 md:h-28 xl:h-32 bg-pureWhite duration-300 rounded-full shadow-xl"
         />
       </div>
       {inView && (
@@ -26,7 +26,7 @@ function AnalyticsSingleItem({ image, count, title, suffix }) {
           duration={4}
           suffix={suffix}
           separator=""
-          className="text-base md:text-2xl xl:text-5xl text-center font-clashSemi text-blackHigh uppercase mt-6 mb-1"
+          className="text-base md:text-2xl xl:text-5xl text-center font-clashSemi text-primaryColor uppercase mt-6 mb-1"
         ></CountUp>
       )}
 

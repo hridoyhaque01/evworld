@@ -20,23 +20,8 @@ const CustomerList = () => {
         <Swiper
           modules={[Pagination]}
           slidesPerView={1}
-          spaceBetween={12}
           pagination={{ clickable: true }}
           className="py-16 "
-          breakpoints={{
-            430: {
-              slidesPerView: 2,
-              spaceBetween: 16,
-            },
-            1024: {
-              slidesPerView: 2,
-              spaceBetween: 24,
-            },
-            1200: {
-              slidesPerView: 3,
-              spaceBetween: 24,
-            },
-          }}
         >
           {customers?.map((customer) => (
             <SwiperSlide key={customer.id}>
