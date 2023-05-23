@@ -77,6 +77,38 @@
       "instaLink": "/",
       "linkedinLink": "/",
       "image": "./images/team/memberFour.png"
+    },
+    {
+      "id": 5,
+      "name": "Souza Cunha",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberFive.png"
+    },
+    {
+      "id": 6,
+      "name": "Alexander Atkins",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberSix.png"
+    },
+    {
+      "id": 7,
+      "name": "Matilde Pereira",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberSeven.png"
+    },
+    {
+      "id": 8,
+      "name": "Theresa Webb",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberEight.png"
     }
   ],
   "news": [

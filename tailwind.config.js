@@ -3,6 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     colors: {
+      transparent: "transparent",
+
       navyDark: "#212035", //used
       navySemi: "#2B2949", //used
       navyMid: "#4B4783", //used
@@ -16,7 +18,7 @@ module.exports = {
       alertColor: "#FECA57",
 
       pureBlack: "#181A20", //used
-      blackHigh: "#212035",
+      blackHigh: "#262626", //used
       blackSemi: "#424242",
       blackMid: "#6C6C6C", //used
       blackLow: "#94959B",
@@ -43,7 +45,11 @@ module.exports = {
 
     boxShadow: {
       md: "0px 13px 40px rgba(0, 0, 0, 0.05)",
+      lg: "0px 4px 20px rgba(0, 0, 0, 0.08)",
     },
+    // dropShadow: {
+    //   md: "0px 4px 20px rgba(0, 0, 0, 0.08)",
+    // },
 
     transitionDuration: {
       100: "100ms",
@@ -57,8 +63,5 @@ module.exports = {
       analyticsBg: "url('./Assets/images/analytics/analytics.png')",
     },
   },
-  plugins: [require("daisyui"), require("preline/plugin")],
-  daisyui: {
-    themes: false,
-  },
+  plugins: [require("preline/plugin")],
 };

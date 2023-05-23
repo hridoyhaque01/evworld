@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layouts/Main";
-import PageOne from "../Pages/PageOne/PageOne";
-import PageTwo from "../Pages/PageTwo/PageTwo";
+import HomePageOne from "../Pages/HomePageOne/HomePageOne";
+import HomePageTwo from "../Pages/HomePageTwo/HomePageTwo";
+import HomePageThree from "../Pages/HomePageThree/HomePageThree";
 
 export const router = createBrowserRouter([
   {
@@ -10,11 +11,15 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <PageOne></PageOne>,
+        element: <HomePageOne></HomePageOne>,
       },
       {
-        path: "/pageTwo",
-        element: <PageTwo></PageTwo>,
+        path: "/homePageTwo",
+        element: <HomePageTwo></HomePageTwo>,
+      },
+      {
+        path: "/homePageThree",
+        element: <HomePageThree></HomePageThree>,
       },
     ],
   },

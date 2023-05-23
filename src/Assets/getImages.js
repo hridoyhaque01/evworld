@@ -1,6 +1,9 @@
 import future from "./images/about/future.png";
 import inovation from "./images/about/inovation.png";
 import passin from "./images/about/passin.png";
+import passion from "./images/about/passion.png";
+import greener from "./images/about/greener.png";
+import vission from "./images/about/vission.png";
 
 import acceleration from "./images/car-feature/acceleration.png";
 import battery from "./images/car-feature/battery.png";
@@ -20,6 +23,8 @@ import plant from "./images/analytics/plant.png";
 import station from "./images/analytics/station.png";
 
 import logoWhite from "./images/logo/logo-white.png";
+import logoDark from "./images/logo/logo-dark.png";
+
 import memberFour from "./images/team/memberFour.png";
 import memberOne from "./images/team/memberOne.png";
 import memberThree from "./images/team/memberThree.png";
@@ -37,6 +42,10 @@ import contact from "./images/contact/contact.png";
 
 export {
   logoWhite,
+  logoDark,
+  passion,
+  greener,
+  vission,
   future,
   inovation,
   passin,

@@ -15,11 +15,7 @@ function App() {
     });
     AOS.refresh();
   }, []);
-  return (
-    <div className="">
-      <RouterProvider router={Router}></RouterProvider>
-    </div>
-  );
+  return <RouterProvider router={Router}></RouterProvider>;
 }
 
 export default App;
