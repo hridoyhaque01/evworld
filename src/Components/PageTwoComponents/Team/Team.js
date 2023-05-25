@@ -9,6 +9,8 @@ import TeamSingleMember from "./TeamSingleMember";
 const Team = () => {
   const { teamMembers } = db || {};
 
+  const memberSlice = teamMembers?.slice(0, 4);
+
   return (
     <section className="px-6 lg:px-28 2xl:px-32 pt-10 md:pt-20 lg:pt-28">
       <SectionTitle
@@ -39,7 +41,7 @@ const Team = () => {
           }}
           className="pb-10 md:pb-20 lg:pb-28"
         >
-          {teamMembers?.map((teamMember) => (
+          {memberSlice?.map((teamMember) => (
             <SwiperSlide key={teamMember.id}>
               <TeamSingleMember details={teamMember}></TeamSingleMember>
             </SwiperSlide>

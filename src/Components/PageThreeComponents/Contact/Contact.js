@@ -11,7 +11,7 @@ function Contact() {
           texts="Have a question about our products or services? Want to learn more about electric mobility? Contact us today to speak with one of our experts."
         ></SectionTitle>
 
-        <div className="grid grid-cols-1 md:grid-cols-7 items-start mt-4 md:mt-16 xl:mt-20 gap-2 md:gap-8 xl:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-7 items-start mt-4 md:mt-16 xl:mt-20 gap-8 md:gap-8 xl:gap-10">
           <div className="md:col-span-4">
             <FAQ></FAQ>
           </div>
