@@ -15,7 +15,7 @@ function ProductSingleItem({ image, title }) {
         onMouseLeave={handleRotate}
       >
         <div
-          className=" shadow-md flex justify-center items-center origin-top bg-navyLight rounded-3xl group-hover:bg-primaryColor duration-300  absolute top-0 left-0 h-full w-full"
+          className=" shadow-md flex justify-center items-center origin-top bg-pureWhite group-hover:bg-primaryColor duration-300  absolute top-0 left-0 h-full w-full"
           style={{
             transform: `perspective(600px) ${
               isRotate ? " rotateY(-160deg)" : "rotateY(-25deg)"

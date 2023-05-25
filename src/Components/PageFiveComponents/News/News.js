@@ -7,8 +7,8 @@ import NewsSingleItem from "./NewsSingleItem";
 function News() {
   const { news } = db || {};
   return (
-    <section className="px-6 lg:px-28 2xl:px-32 mx-auto pt-10 md:pt-20 xl:pt-28">
-      <div>
+    <section className="px-6 pt-10 md:pt-20 xl:pt-28">
+      <div className="max-w-[1180px] mx-auto">
         <SectionTitle
           title="News and Insights"
           texts="Stay up-to-date on the latest news and insights from the world of electric mobility with our blog. From industry trends to product announcements, we've got you covered."

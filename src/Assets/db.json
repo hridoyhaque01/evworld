@@ -109,6 +109,38 @@
       "instaLink": "/",
       "linkedinLink": "/",
       "image": "./images/team/memberEight.png"
+    },
+    {
+      "id": 9,
+      "name": "Theresa Webb",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberNine.png"
+    },
+    {
+      "id": 10,
+      "name": "Theresa Webb",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberNine.png"
+    },
+    {
+      "id": 11,
+      "name": "Theresa Webb",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberNine.png"
+    },
+    {
+      "id": 12,
+      "name": "Theresa Webb",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "./images/team/memberNine.png"
     }
   ],
   "news": [

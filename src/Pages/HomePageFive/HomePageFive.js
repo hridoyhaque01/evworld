@@ -4,7 +4,6 @@ import Analytics from "../../Components/PageFiveComponents/Analytics/Analytics";
 import Banner from "../../Components/PageFiveComponents/Banners/Banner";
 import CarFeature from "../../Components/PageFiveComponents/Car-Features/CarFeature";
 import Contact from "../../Components/PageFiveComponents/Contact/Contact";
-import CustomerList from "../../Components/PageFiveComponents/Customer/CustomerList";
 import News from "../../Components/PageFiveComponents/News/News";
 import Products from "../../Components/PageFiveComponents/Products/Products";
 import Footer from "../../Components/PageFiveComponents/Shared/Footer/Footer";
@@ -20,10 +19,9 @@ function HomePageFive() {
         <Banner></Banner>
         <About></About>
         <Team></Team>
+        <Products></Products>
         <Analytics></Analytics>
         <CarFeature></CarFeature>
-        <CustomerList></CustomerList>
-        <Products></Products>
         <Contact></Contact>
         <News></News>
         <Subscription></Subscription>

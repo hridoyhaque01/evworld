@@ -19,8 +19,8 @@ import "./carFeature.css";
 
 function CarFeature() {
   return (
-    <section className="px-6 lg:px-28 2xl:px-32 pt-10 pb-6 md:pt-20 lg:pt-28">
-      <div className="">
+    <section className="px-6 pt-10 pb-6 md:pt-20 lg:pt-28">
+      <div className="max-w-[1180px] mx-auto">
         <SectionTitleWithSubtitle
           title="The Next Generation of Sustainable Driving"
           subtitle="Elvo 465 St Super"

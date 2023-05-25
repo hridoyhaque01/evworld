@@ -10,10 +10,11 @@ import TeamSingleMember from "./TeamSingleMember";
 const Team = () => {
   const { teamMembers } = db || {};
 
-  const sliceMembers = teamMembers?.slice(4);
+  const sliceMembers = teamMembers?.slice(8);
 
   return (
-    <section className="px-6 lg:px-28 2xl:px-32 pt-10 md:pt-20 lg:pt-28">
+    <section className="px-6 pt-10 md:pt-20 lg:pt-28">
+      <div className="max-w-[1180px] mx-auto">
       <SectionTitle
         title="Meet Our Team"
         texts="Our team of experts is dedicated to bringing you the best in electric mobility."
@@ -33,7 +34,6 @@ const Team = () => {
               slidesPerView: 3,
               spaceBetween: 24,
             },
-
             1280: {
               slidesPerView: 4,
               spaceBetween: 24,
@@ -47,6 +47,7 @@ const Team = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
       </div>
     </section>
   );

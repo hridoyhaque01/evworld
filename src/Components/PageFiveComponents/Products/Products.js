@@ -8,7 +8,8 @@ import ProductSingleItem from "./ProductSingleItem";
 function Products() {
   const { products } = db || {};
   return (
-    <section className="px-6 lg:px-28 2xl:px-32 pt-10 md:pt-20 ">
+    <section className="px-6 pt-10 md:pt-20 ">
+      <div className="max-w-[1180px] mx-auto">
       <SectionTitle
         title="Featured Products"
         texts="Our team of experts is dedicated to bringing you the best in electric mobility."
@@ -55,6 +56,7 @@ function Products() {
             <span class="material-symbols-outlined">chevron_right</span>
           </Link>
         </div>
+      </div>
       </div>
     </section>
   );
