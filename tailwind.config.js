@@ -9,6 +9,7 @@ module.exports = {
       navySemi: "#2B2949", //used
       navyMid: "#4B4783", //used
       navyLow: "#3B3964", //used
+      navyLight: "#3A3950", //used
 
       primaryColor: "#C1EF00", //used
       successColor: "2CC672",
@@ -19,7 +20,7 @@ module.exports = {
 
       pureBlack: "#181A20", //used
       blackHigh: "#262626", //used
-      blackSemi: "#424242",
+      blackSemi: "#212226", //used
       blackMid: "#6C6C6C", //used
       blackLow: "#94959B",
       blackFadeDark: "#474747", //used
