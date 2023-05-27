@@ -7,9 +7,9 @@ import Contact from "../../Components/PageTwoComponents/Contact/Contact";
 import CustomerList from "../../Components/PageTwoComponents/Customer/CustomerList";
 import News from "../../Components/PageTwoComponents/News/News";
 import Products from "../../Components/PageTwoComponents/Products/Products";
-import Footer from "../../Components/PageTwoComponents/Shared/Footer/Footer";
-import Navbar from "../../Components/PageTwoComponents/Shared/Navbar/Navbar";
 import Team from "../../Components/PageTwoComponents/Team/Team";
+import Footer from "../../Components/Shared/FooterOne/Footer";
+import Navbar from "../../Components/Shared/NavbarTwo/Navbar";
 
 function PageTwo() {
   return (

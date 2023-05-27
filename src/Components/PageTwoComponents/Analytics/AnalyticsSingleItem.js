@@ -2,7 +2,7 @@ import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
-function AnalyticsSingleItem({ image, count, title, suffix }) {
+function AnalyticsSingleItem({ count, title, suffix, children }) {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -12,12 +12,8 @@ function AnalyticsSingleItem({ image, count, title, suffix }) {
       className="flex flex-col items-center bg-primaryColor py-4 px-2 sm:py-6"
       ref={ref}
     >
-      <div className="">
-        <img
-          src={image}
-          alt="analytics"
-          className="w-14 h-14 md:w-28 xl:w-32 md:h-28 xl:h-32 duration-300 rounded-full"
-        />
+      <div className="p-4 md:p-6 group bg-pureWhite rounded-full">
+        {children}
       </div>
       {inView && (
         <CountUp

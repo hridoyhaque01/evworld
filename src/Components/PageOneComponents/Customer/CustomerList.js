@@ -3,12 +3,12 @@
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
+import getData from "../../../utils/getData.json";
 import Customer from "./Customer";
 import "./customer.css";
-import db from "../../../Assets/db.json";
 
 const CustomerList = () => {
-  const { customers } = db || {};
+  const { customers } = getData || {};
 
   return (
     <section className="px-6 lg:px-28 2xl:px-32 pt-10 md:pt-20 lg:pt-28">

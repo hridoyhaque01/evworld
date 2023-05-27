@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import db from "../../../Assets/db.json";
-import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import getData from "../../../utils/getData.json";
+import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import ProductSingleItem from "./ProductSingleItem";
 
 function Products() {
-  const { products } = db || {};
+  const { products } = getData || {};
   return (
     <section className="px-6 lg:px-28 2xl:px-32 pt-10 md:pt-20 ">
       <SectionTitle

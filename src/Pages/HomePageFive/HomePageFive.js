@@ -6,10 +6,10 @@ import CarFeature from "../../Components/PageFiveComponents/Car-Features/CarFeat
 import Contact from "../../Components/PageFiveComponents/Contact/Contact";
 import News from "../../Components/PageFiveComponents/News/News";
 import Products from "../../Components/PageFiveComponents/Products/Products";
-import Footer from "../../Components/PageFiveComponents/Shared/Footer/Footer";
-import Navbar from "../../Components/PageFiveComponents/Shared/Navbar/Navbar";
 import Subscription from "../../Components/PageFiveComponents/Subscription/Subscription";
 import Team from "../../Components/PageFiveComponents/Team/Team";
+import Footer from "../../Components/Shared/FooterOne/Footer";
+import Navbar from "../../Components/Shared/NavbarFive/Navbar";
 
 function HomePageFive() {
   return (

@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
+      transparentLight: "rgba(33, 32, 53, 0.5)",
 
       navyDark: "#212035", //used
       navySemi: "#2B2949", //used
@@ -61,8 +62,9 @@ module.exports = {
     },
 
     backgroundImage: {
-      bannerBg: "url('./Assets/images/banner.png')",
-      analyticsBg: "url('./Assets/images/analytics/analytics.png')",
+      bannerOne: "url('./Assets/images/banner1.png')",
+      serviceDetails: "url('./Assets/images/service-details.png')",
+      analyticsBg: "url('./Assets/images/analytics.png')",
     },
   },
   plugins: [require("preline/plugin")],

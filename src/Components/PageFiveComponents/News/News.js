@@ -1,11 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import db from "../../../Assets/db.json";
-import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import getData from "../../../utils/getData.json";
+import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import NewsSingleItem from "./NewsSingleItem";
 
 function News() {
-  const { news } = db || {};
+  const { news } = getData || {};
   return (
     <section className="px-6 pt-10 md:pt-20 xl:pt-28">
       <div className="max-w-[1180px] mx-auto">

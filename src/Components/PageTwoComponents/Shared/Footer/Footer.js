@@ -1,5 +1,5 @@
 import React from "react";
-import { logoWhite } from "../../../../Assets/getImages";
+// import { logoWhite } from "../../../../Assets/getImages";
 
 import { Link } from "react-router-dom";
 
@@ -8,9 +8,7 @@ function Footer() {
     <footer className="px-6 lg:px-28 2xl:px-32 py-10 bg-navySemi text-pureWhite">
       <div className="gap-10 grid grid-cols-1 md:grid-cols-5">
         <div className="flex flex-col gap-4 md:col-span-2">
-          <div>
-            <img src={logoWhite} alt="" />
-          </div>
+          <div>{/* <img src={logoWhite} alt="" /> */}</div>
           <p className="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

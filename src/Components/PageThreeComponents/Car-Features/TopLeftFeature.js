@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
-import { carSize } from "../../../Assets/getImages";
+import { carSize } from "../../../utils/getImages";
 
 function TopLeftFeature() {
   const { ref, inView } = useInView({

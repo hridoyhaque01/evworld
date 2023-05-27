@@ -3,14 +3,12 @@ import { Pagination } from "swiper";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import db from "../../../Assets/db.json";
-import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import getData from "../../../utils/getData.json";
+import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import TeamSingleMember from "./TeamSingleMember";
 
 const Team = () => {
-  const { teamMembers } = db || {};
-
-  const sliceMembers = teamMembers?.slice(4);
+  const { pageThreeMembers } = getData || {};
 
   return (
     <section className="px-6 lg:px-28 2xl:px-32 pt-10 md:pt-20 lg:pt-28">
@@ -41,7 +39,7 @@ const Team = () => {
           }}
           className="pb-16"
         >
-          {sliceMembers?.map((teamMember) => (
+          {pageThreeMembers?.map((teamMember) => (
             <SwiperSlide key={teamMember.id}>
               <TeamSingleMember details={teamMember}></TeamSingleMember>
             </SwiperSlide>

@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import FAQ from "./FAQ";
 
 function Contact() {

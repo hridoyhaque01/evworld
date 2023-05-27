@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
-import { safety } from "../../../Assets/getImages";
+import { safety } from "../../../utils/getImages";
 
 function TopRightFeature() {
   const { ref, inView } = useInView({

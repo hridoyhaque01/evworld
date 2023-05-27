@@ -1,5 +1,5 @@
 import React from "react";
-import { greener, vission, passion } from "../../../Assets/getImages";
+import { greener, passion, vission } from "../../../utils/getImages";
 import AboutSingleItem from "./AboutSingleItem";
 
 function About() {

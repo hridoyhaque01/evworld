@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
-import { braking } from "../../../Assets/getImages";
+import { braking } from "../../../utils/getImages";
 
 function BottomRightFeature() {
   const { ref, inView } = useInView({

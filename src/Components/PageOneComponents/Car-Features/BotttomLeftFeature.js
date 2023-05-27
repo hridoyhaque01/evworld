@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
-import { eco } from "../../../Assets/getImages";
+import { eco } from "../../../utils/getImages";
 
 function BotttomLeftFeature() {
   const { ref, inView } = useInView({

@@ -3,7 +3,7 @@ import React from "react";
 function Banner() {
   return (
     <section className="px-6 lg:px-28 2xl:px-32">
-      <div className=" text-pureWhite bg-bannerBg bg-no-repeat bg-bottom bg-cover object-contain rounded-[40px] py-12 md:py-24 pl-0 pr-4 lg:py-32 lg:px-10 flex items-center justify-center">
+      <div className=" text-pureWhite bg-bannerOne bg-no-repeat bg-bottom bg-cover object-contain rounded-[40px] py-12 md:py-24 pl-0 pr-4 lg:py-32 lg:px-10 flex items-center justify-center">
         {/* details  */}
         <div className="flex flex-col justify-between gap-14 md:gap-20">
           <div className=" flex items-center  gap-x-1 -rotate-90 max-w-max max-h-max">

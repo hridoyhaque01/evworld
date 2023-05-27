@@ -2,11 +2,11 @@ import React from "react";
 import {
   acceleration,
   battery,
-  car,
   charging,
+  featureCar,
   infotainment,
   wheels,
-} from "../../../Assets/getImages";
+} from "../../../utils/getImages";
 import BottomRightFeature from "./BottomRightFeature";
 import BotttomLeftFeature from "./BotttomLeftFeature";
 import CenterLaftFeature from "./CenterLaftFeature";
@@ -14,7 +14,7 @@ import CenterRightFeature from "./CenterRightFeature";
 import TopLeftFeature from "./TopLeftFeature";
 import TopRightFeature from "./TopRightFeature";
 
-import SectionTitleWithSubtitle from "../Shared/SectionTitle/SectionTitleWithSubtitle";
+import SectionTitleWithSubtitle from "../../Shared/SectionTitle/SectionTitleWithSubtitle";
 import "./carFeature.css";
 
 function CarFeature() {
@@ -55,7 +55,7 @@ function CarFeature() {
               ></CenterLaftFeature>
             </div>
             <div className="shrink-0 w-[80px] sm:w-44 md:w-[274px] 2xl:w-auto duration-300">
-              <img src={car} alt="car feature" className="" />
+              <img src={featureCar} alt="car feature" className="" />
             </div>
             <div className="flex flex-col justify-between gap-3 md:gap-12 lg:gap-20 2xl:gap-36 h-full">
               <CenterRightFeature

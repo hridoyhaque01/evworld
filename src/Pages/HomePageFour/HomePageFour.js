@@ -7,10 +7,10 @@ import Contact from "../../Components/PageFourComponents/Contact/Contact";
 import CustomerList from "../../Components/PageFourComponents/Customer/CustomerList";
 import News from "../../Components/PageFourComponents/News/News";
 import Products from "../../Components/PageFourComponents/Products/Products";
-import Footer from "../../Components/PageFourComponents/Shared/Footer/Footer";
-import Navbar from "../../Components/PageFourComponents/Shared/Navbar/Navbar";
 import Subscription from "../../Components/PageFourComponents/Subscription/Subscription";
 import Team from "../../Components/PageFourComponents/Team/Team";
+import Footer from "../../Components/Shared/FooterTwo/Footer";
+import Navbar from "../../Components/Shared/NavbarFour/Navbar";
 
 function HomePageFour() {
   return (
