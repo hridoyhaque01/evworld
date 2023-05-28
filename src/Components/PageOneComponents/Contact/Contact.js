@@ -4,8 +4,8 @@ import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 
 function Contact() {
   return (
-    <section className="px-6 lg:px-28 2xl:px-32 pt-10 md:pt-20 xl:pt-28">
-      <div className="">
+    <section className="px-6  pt-10 md:pt-20 xl:pt-28">
+      <div className="max-w-[1180px] mx-auto">
         <SectionTitle
           title="Get in Touch"
           texts="Have a question about our products or services? Want to learn more about electric mobility? Contact us today to speak with one of our experts."
