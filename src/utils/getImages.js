@@ -5,6 +5,7 @@ import productStation from "../Assets/images/products/productStation.png";
 
 // features
 
+import error from "../Assets/images/error.png";
 import acceleration from "../Assets/images/features/acceleration.png";
 import battery from "../Assets/images/features/battery.png";
 import braking from "../Assets/images/features/braking.png";
@@ -33,6 +34,11 @@ import logoBlack from "../Assets/images/logoBlack.png";
 import logoDark from "../Assets/images/logoDark.png";
 import logoWhite from "../Assets/images/logoWhite.png";
 
+//shop
+
+import shopCarOne from "../Assets/images/shopProduct/shopProductOne-1.png";
+import shopCar from "../Assets/images/shopProduct/shopProductOne.png";
+
 export {
   productCar,
   productStation,
@@ -55,4 +61,7 @@ export {
   logoWhite,
   logoDark,
   logoBlack,
+  error,
+  shopCar,
+  shopCarOne,
 };

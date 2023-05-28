@@ -15,8 +15,8 @@ function Navbar() {
   };
 
   return (
-    <nav className=" bg-primaryColor p-6 lg:py-12 md:text-blackFadeDark">
-      <div className="max-w-[1180px] mx-auto">
+    <nav className=" bg-primaryColor px-6 lg:px-28 2xl:px-32 py-6 relative z-50 md:text-blackFadeDark">
+      <div className="">
         <div className="flex items-center justify-between md:hidden relative ">
           {/* logo  */}
           <div className="flex-1">
@@ -250,18 +250,18 @@ function Navbar() {
                 >
                   <li>
                     <Link
-                      to=""
+                      to="/shop"
                       className=" uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
                     >
-                      Page 1
+                      shop
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to=""
+                      to="/shop/1"
                       className=" uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
                     >
-                      Page 2
+                      shop details
                     </Link>
                   </li>
                 </ul>
@@ -269,7 +269,7 @@ function Navbar() {
 
               <li className="">
                 <Link
-                  to="/contactUs"
+                  to="/contact-us"
                   className="flex  py-2 pl-4  md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100"
                 >
                   contact us

@@ -23,7 +23,7 @@ module.exports = {
       blackHigh: "#262626", //used
       blackSemi: "#212226", //used
       blackMid: "#6C6C6C", //used
-      blackLow: "#94959B",
+      blackLow: "#919191", //used
       blackFadeDark: "#474747", //used
       blackFade: "#9E9E9E",
 

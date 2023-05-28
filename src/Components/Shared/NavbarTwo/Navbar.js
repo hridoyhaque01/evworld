@@ -258,25 +258,25 @@ function Navbar() {
               >
                 <li>
                   <Link
-                    to=""
+                    to="/shop"
                     className="text-whiteHigh hover:text-primaryColor uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
                   >
-                    Page 1
+                    shop
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to=""
+                    to="/shop/1"
                     className="text-whiteHigh hover:text-primaryColor uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
                   >
-                    Page 2
+                    shop details
                   </Link>
                 </li>
               </ul>
             </li>
             <li className="">
               <Link
-                to="/contactUs"
+                to="/contact-us"
                 className="flex text-whiteHigh hover:text-primaryColor py-2 pl-4 hover:bg-navyDark md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100"
               >
                 Contact us

@@ -288,5 +288,226 @@
       "title": "chargers for\nEveryone",
       "image": "../images/services/serviceSix.png"
     }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "image": "../images/gallery/gallery-1.png"
+    },
+    {
+      "id": 2,
+      "image": "../images/gallery/gallery-2.png"
+    },
+    {
+      "id": 3,
+      "image": "../images/gallery/gallery-3.png"
+    },
+    {
+      "id": 4,
+      "image": "../images/gallery/gallery-4.png"
+    },
+    {
+      "id": 5,
+      "image": "../images/gallery/gallery-5.png"
+    },
+    {
+      "id": 6,
+      "image": "../images/gallery/gallery-6.png"
+    },
+
+    {
+      "id": 8,
+      "image": "../images/gallery/gallery-8.png"
+    },
+    {
+      "id": 9,
+      "image": "../images/gallery/gallery-9.png"
+    },
+    {
+      "id": 10,
+      "image": "../images/gallery/gallery-10.png"
+    },
+    {
+      "id": 11,
+      "image": "../images/gallery/gallery-11.png"
+    },
+    {
+      "id": 12,
+      "image": "../images/gallery/gallery-12.png"
+    },
+
+    {
+      "id": 13,
+      "image": "../images/gallery/gallery-3.png"
+    },
+    {
+      "id": 14,
+      "image": "../images/gallery/gallery-4.png"
+    },
+    {
+      "id": 15,
+      "image": "../images/gallery/gallery-5.png"
+    },
+    {
+      "id": 16,
+      "image": "../images/gallery/gallery-6.png"
+    },
+    {
+      "id": 18,
+      "image": "../images/gallery/gallery-8.png"
+    },
+    {
+      "id": 19,
+      "image": "../images/gallery/gallery-9.png"
+    },
+    {
+      "id": 20,
+      "image": "../images/gallery/gallery-10.png"
+    },
+    {
+      "id": 21,
+      "image": "../images/gallery/gallery-11.png"
+    },
+    {
+      "id": 22,
+      "image": "../images/gallery/gallery-12.png"
+    }
+  ],
+  "shopProducts": [
+    {
+      "id": 1,
+      "image": "../images/shop/image.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "image": "../images/shop/image-1.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "image": "../images/shop/image-2.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "image": "../images/shop/image-3.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "image": "../images/shop/image-4.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "image": "../images/shop/image-5.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "image": "../images/shop/image-6.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "image": "../images/shop/image-7.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 9,
+      "image": "../images/shop/image-8.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 10,
+      "image": "../images/shop/image-9.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 11,
+      "image": "../images/shop/image-10.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 12,
+      "image": "../images/shop/image-11.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 13,
+      "image": "../images/shop/image-12.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 14,
+      "image": "../images/shop/image-13.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    },
+    {
+      "id": 15,
+      "image": "../images/shop/image-14.png",
+      "name": "Car name Series Model",
+      "category": "Charger",
+      "regular_price": 51000.0,
+      "discount_price": 40000.0,
+      "rating": 4
+    }
   ]
 }

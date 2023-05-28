@@ -14,6 +14,7 @@ const Team = () => {
     <section className="px-6 pt-10 md:pt-20 lg:pt-28">
       <div className="max-w-[1180px] mx-auto">
         <SectionTitle
+          dark={true}
           title="Meet Our Team"
           texts="Our team of experts is dedicated to bringing you the best in electric mobility."
         ></SectionTitle>
