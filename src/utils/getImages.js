@@ -34,10 +34,18 @@ import logoBlack from "../Assets/images/logoBlack.png";
 import logoDark from "../Assets/images/logoDark.png";
 import logoWhite from "../Assets/images/logoWhite.png";
 
+import supercharger from "../Assets/images/Superchargers.png";
+
 //shop
 
 import shopCarOne from "../Assets/images/shopProduct/shopProductOne-1.png";
 import shopCar from "../Assets/images/shopProduct/shopProductOne.png";
+
+//checkout
+
+import circle from "../Assets/images/checkout/circle.png";
+import mastercard from "../Assets/images/checkout/mastercard.png";
+import paypal from "../Assets/images/checkout/paypal.png";
 
 export {
   productCar,
@@ -64,4 +72,8 @@ export {
   error,
   shopCar,
   shopCarOne,
+  mastercard,
+  circle,
+  paypal,
+  supercharger,
 };

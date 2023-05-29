@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import { logoBlack } from "../../../utils/getImages";
+import { Link, NavLink } from "react-router-dom";
+import { logoDark } from "../../../utils/getImages";
 
 function Navbar() {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState({});
@@ -15,72 +15,57 @@ function Navbar() {
   };
 
   return (
-    <nav className=" bg-primaryColor px-6 lg:px-28 2xl:px-32 py-6 relative z-50 md:text-blackFadeDark">
-      <div className="">
-        <div className="flex items-center justify-between md:hidden relative ">
-          {/* logo  */}
-          <div className="flex-1">
-            <Link to="/">
-              <img src={logoBlack} alt="logo" className="mx-auto w-32" />
-            </Link>
+    <nav className="py-8 px-6 md:text-navyDark text-pureWhite bg-primaryColor font-medium uppercase">
+      <div className="max-w-[1180px] mx-auto">
+        <div className="flex items-center justify-between md:hidden">
+          <div className="flex-1 text-center">
+            <NavLink to="/" className="">
+              <img src={logoDark} alt="" />
+            </NavLink>
           </div>
-          <button type="button" onClick={() => setToggleMenu(true)}>
-            <span className="material-symbols-outlined text-blackFadeDark">
-              menu
-            </span>
-          </button>
-          {/* toggle menu  */}
+          <div>
+            <button type="button" onClick={() => setToggleMenu(true)}>
+              <span className="material-symbols-outlined select-none text-navyDark">
+                menu
+              </span>
+            </button>
+          </div>
         </div>
 
-        {/* navbar manus  */}
-
-        {toggleMenu && (
-          <div
-            className="fixed top-0 right-0 bottom-0 left-0 bg-navyDark md:hidden z-20"
-            onClick={() => setToggleMenu(false)}
-          ></div>
-        )}
-
         <div
-          className={`fixed top-0 right-0 md:relative h-full bg-primaryColor ${
-            toggleMenu ? "w-80" : "w-0 md:w-full"
-          } md:bg-transparent md:overflow-visible overflow-auto z-30`}
+          className={`flex flex-col md:flex-row md:items-center md:justify-between  fixed right-0 top-0 bottom-0 gap-6 md:gap-0 md:relative bg-navySemi md:bg-transparent overflow-auto md:overflow-visible   duration-300 z-50 ${
+            toggleMenu ? "w-72 md:w-full " : "w-0 md:w-full "
+          }`}
         >
-          <div
-            className={`flex flex-col justify-start md:flex-row md:justify-between md:items-center gap-6 md:gap-4 lg:gap-6  p-8 md:p-0`}
-          >
-            {/* close menu button  */}
-
-            <div className="text-right md:hidden">
-              <button type="button" onClick={() => setToggleMenu(false)}>
-                <span className="material-symbols-outlined text-blackFadeDark">
-                  close
-                </span>
-              </button>
-            </div>
-
-            {/* first menu  */}
-
-            <ul className="flex flex-col md:items-center justify-start md:flex-row gap-6 md:gap-4 lg:gap-6">
-              <li className="group relative">
+          <div className="block text-right text-primaryColor md:hidden px-8 mt-8">
+            <button type="button" onClick={() => setToggleMenu(false)}>
+              <span className="material-symbols-outlined select-none">
+                close
+              </span>
+            </button>
+          </div>
+          <div className="px-8 md:p-0 ">
+            <ul className="flex flex-col md:flex-row md:items-center gap-6">
+              {/* home pages  */}
+              <li className="relative group">
                 <p
-                  className="group flex items-center py-2 pl-4 md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100 cursor-pointer "
+                  className={
+                    "flex items-center hover:bg-navyDark md:hover:bg-transparent px-6 py-2 md:p-0 rounded-md cursor-pointer group"
+                  }
                   onClick={() => handleDropdown("home")}
                 >
                   <span>home</span>
                   <span
-                    className={`material-symbols-outlined duration-300 ${
-                      isSubmenuOpen["home"]
-                        ? "rotate-180 md:rotate-0 md:group-hover:rotate-180"
-                        : "md:group-hover:rotate-180"
+                    className={`material-symbols-outlined select-none md:group-hover:rotate-180 duration-300 ${
+                      isSubmenuOpen["home"] && "rotate-180 md:rotate-0"
                     }`}
                   >
                     expand_more
                   </span>
                 </p>
                 <ul
-                  className={`static md:absolute md:bg-pureWhite rounded-lg md:translate-y-6 md:opacity-0 md:invisible duration-300 md:group-hover:translate-y-0 md:group-hover:opacity-100 md:group-hover:visible ml-4 md:ml-0 overflow-hidden ${
-                    !isSubmenuOpen["home"] && "max-h-0 md:max-h-max "
+                  className={`md:bg-navySemi text-pureWhite rounded-lg static md:absolute z-20 md:invisible md:opacity-0 md:translate-y-4 md:group-hover:visible md:group-hover:opacity-100 md:group-hover:translate-y-0 duration-300 overflow-hidden ${
+                    !isSubmenuOpen["home"] && "max-h-0 md:max-h-max"
                   }`}
                   ref={(ref) => (submenuRef.current["home"] = ref)}
                   style={{
@@ -90,66 +75,67 @@ function Navbar() {
                   }}
                 >
                   <li>
-                    <Link
+                    <NavLink
                       to="/"
-                      className="uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
                     >
-                      Page 1
-                    </Link>
+                      Home page 1
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
-                      to="/homePageTwo"
-                      className="uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    <NavLink
+                      to="/homepage-two"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
                     >
-                      Page 2
-                    </Link>
+                      Home page 2
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
-                      to="/homePageThree"
-                      className="uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    <NavLink
+                      to="/homepage-three"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
                     >
-                      Page 3
-                    </Link>
+                      Home page 3
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
-                      to="/homePageFour"
-                      className="uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    <NavLink
+                      to="/homepage-four"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
                     >
-                      Page 4
-                    </Link>
+                      Home page 4
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
-                      to="/homePageFive"
-                      className="uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    <NavLink
+                      to="/homepage-five"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
                     >
-                      Page 5
-                    </Link>
+                      Home page 5
+                    </NavLink>
                   </li>
                 </ul>
               </li>
-              <li className="group relative">
+
+              {/* other pages  */}
+
+              <li className="relative group">
                 <p
-                  className="group flex items-center  py-2 pl-4  md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100 cursor-pointer "
+                  className="flex items-center px-6 py-2 md:p-0 hover:bg-navyDark md:hover:bg-transparent cursor-pointer group"
                   onClick={() => handleDropdown("pages")}
                 >
                   <span>Pages</span>
                   <span
-                    className={`material-symbols-outlined duration-300 ${
-                      isSubmenuOpen["pages"]
-                        ? "rotate-180 md:rotate-0 md:group-hover:rotate-180"
-                        : "md:group-hover:rotate-180"
+                    className={`material-symbols-outlined select-none md:group-hover:rotate-180 duration-300 ${
+                      isSubmenuOpen["pages"] && "rotate-180 md:rotate-0"
                     }`}
                   >
                     expand_more
                   </span>
                 </p>
                 <ul
-                  className={`static md:absolute md:bg-pureWhite rounded-lg md:translate-y-6 md:opacity-0 md:invisible duration-300 md:group-hover:translate-y-0 md:group-hover:opacity-100 md:group-hover:visible ml-4 md:ml-0 overflow-hidden ${
-                    !isSubmenuOpen["pages"] && "max-h-0 md:max-h-max "
+                  className={`md:bg-navySemi text-pureWhite rounded-lg static md:absolute z-20 md:invisible md:opacity-0 md:translate-y-4 md:group-hover:visible md:group-hover:opacity-100 md:group-hover:translate-y-0 duration-300 overflow-hidden ${
+                    !isSubmenuOpen["pages"] && "max-h-0 md:max-h-max"
                   }`}
                   ref={(ref) => (submenuRef.current["pages"] = ref)}
                   style={{
@@ -159,86 +145,89 @@ function Navbar() {
                   }}
                 >
                   <li>
-                    <Link
-                      to="/aboutUs"
-                      className=" uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    <NavLink
+                      to="/about-us"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
                     >
-                      about us
-                    </Link>
+                      aboutUs
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
+                    <NavLink
                       to="/services"
-                      className=" uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
                     >
                       services
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
-                      to="/services/1"
-                      className=" uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    <NavLink
+                      to="/service-details/1"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
                     >
-                      services details
-                    </Link>
+                      services
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
+                    <NavLink
                       to="/gallery"
-                      className=" uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
                     >
                       gallery
-                    </Link>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
-              <li className="">
-                <Link
+
+              {/* station  */}
+              <li>
+                <NavLink
                   to="/station"
-                  className="flex  py-2 pl-4  md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100"
+                  className="px-6 py-2 md:p-0 hover:bg-navyDark md:hover:bg-transparent"
                 >
-                  Station
-                </Link>
+                  satation
+                </NavLink>
               </li>
             </ul>
+          </div>
 
-            {/* logo  */}
+          <div className="hidden md:block">
+            <Link to="/">
+              <img src={logoDark} alt="" />
+            </Link>
+          </div>
 
-            <div className="hidden md:block shrink-0">
-              <Link to="/">
-                <img src={logoBlack} alt="logo" />
-              </Link>
-            </div>
+          <div className="px-8 md:p-0">
+            <ul className="flex flex-col md:flex-row md:items-center gap-6">
+              {/* blog page  */}
 
-            {/* second menu  */}
-
-            <ul className="flex flex-col md:items-center justify-start md:flex-row gap-6 md:gap-4 lg:gap-6">
-              <li className="">
-                <Link
+              <li>
+                <NavLink
                   to="/blog"
-                  className="flex  py-2 pl-4  md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100"
+                  className="px-6 py-2 md:p-0 hover:bg-navyDark md:hover:bg-transparent"
                 >
                   blog
-                </Link>
+                </NavLink>
               </li>
-              <li className="group relative">
+
+              {/* other pages  */}
+
+              <li className="relative group">
                 <p
-                  className="group flex items-center  py-2 pl-4  md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100 cursor-pointer "
+                  className="flex items-center cursor-pointer group px-6 py-2 md:p-0 hover:bg-navyDark md:hover:bg-transparent"
                   onClick={() => handleDropdown("shop")}
                 >
                   <span>shop</span>
                   <span
-                    className={`material-symbols-outlined duration-300 ${
-                      isSubmenuOpen["shop"]
-                        ? "rotate-180 md:rotate-0 md:group-hover:rotate-180"
-                        : "md:group-hover:rotate-180"
+                    className={`material-symbols-outlined select-none md:group-hover:rotate-180 duration-300 ${
+                      isSubmenuOpen["shop"] && "rotate-180 md:rotate-0"
                     }`}
                   >
                     expand_more
                   </span>
                 </p>
                 <ul
-                  className={`static md:absolute md:bg-pureWhite rounded-lg md:translate-y-6 md:invisible md:opacity-0 duration-300 md:group-hover:translate-y-0 md:group-hover:opacity-100 md:group-hover:visible ml-4 md:ml-0 overflow-hidden ${
+                  className={`md:bg-navySemi text-pureWhite rounded-lg static md:absolute z-20 md:invisible md:opacity-0 md:translate-y-4 md:group-hover:visible md:group-hover:opacity-100 md:group-hover:translate-y-0 duration-300 overflow-hidden ${
                     !isSubmenuOpen["shop"] && "max-h-0 md:max-h-max"
                   }`}
                   ref={(ref) => (submenuRef.current["shop"] = ref)}
@@ -249,31 +238,49 @@ function Navbar() {
                   }}
                 >
                   <li>
-                    <Link
+                    <NavLink
                       to="/shop"
-                      className=" uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex "
                     >
                       shop
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
-                    <Link
-                      to="/shop/1"
-                      className=" uppercase whitespace-nowrap font-medium flex py-3 pl-4 pr-24"
+                    <NavLink
+                      to="/shop-details/1"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
                     >
                       shop details
-                    </Link>
+                    </NavLink>
+                  </li>
+
+                  <li>
+                    <NavLink
+                      to="/cart"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
+                    >
+                      carts
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/checkout"
+                      className="whitespace-nowrap pl-6 pr-16 py-2 flex"
+                    >
+                      checkout
+                    </NavLink>
                   </li>
                 </ul>
               </li>
 
-              <li className="">
-                <Link
+              {/* station  */}
+              <li>
+                <NavLink
                   to="/contact-us"
-                  className="flex  py-2 pl-4  md:py-0 md:pl-0 md:hover:bg-transparent uppercase font-medium rounded-md duration-100"
+                  className="px-6 py-2 md:p-0 hover:bg-navyDark md:hover:bg-transparent"
                 >
                   contact us
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -282,5 +289,4 @@ function Navbar() {
     </nav>
   );
 }
-
 export default Navbar;

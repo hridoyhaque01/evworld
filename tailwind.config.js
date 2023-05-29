@@ -13,10 +13,10 @@ module.exports = {
       navyLight: "#3A3950", //used
 
       primaryColor: "#C1EF00", //used
-      successColor: "2CC672",
+      successColor: "#2CC672", //used
       errorColor: "#FD5D5D", //used
-      warningColor: "#FF9F43",
-      infoColor: "#54A0FF",
+      warningColor: "#FF9F43", //used
+      infoColor: "#54A0FF", //used
       alertColor: "#FECA57",
 
       pureBlack: "#181A20", //used

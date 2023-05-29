@@ -509,5 +509,357 @@
       "discount_price": 40000.0,
       "rating": 4
     }
+  ],
+  "station": [
+    {
+      "id": 1,
+      "lat": 37.91791487506194,
+      "lng": -122.10609597461661,
+      "icon": "../images/station/comming-soon.png",
+      "type": "commig_soon"
+    },
+    {
+      "id": 2,
+      "lat": 37.915206379592135,
+      "lng": -122.09425134005568,
+      "icon": "../images/station/fast_charging.png",
+      "type": "fast_charging"
+    },
+    {
+      "id": 3,
+      "lat": 37.920081599629235,
+      "lng": -122.06901711859976,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 4,
+      "lat": 37.91005996344002,
+      "lng": -122.11330575217544,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 5,
+      "lat": 37.91371666457285,
+      "lng": -122.11382073628678,
+      "icon": "../images/station/supercharger_everyone.png",
+      "type": "supercharger_everyone"
+    },
+    {
+      "id": 6,
+      "lat": 37.91750860709949,
+      "lng": -122.12017220699339,
+      "icon": "../images/station/fast_charging.png",
+      "type": "fast_charging"
+    },
+    {
+      "id": 7,
+      "lat": 37.94499434398211,
+      "lng": -122.15467614245348,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 8,
+      "lat": 37.89136731928494,
+      "lng": -122.10334939268942,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 9,
+      "lat": 37.91696691299216,
+      "lng": -122.12497872536592,
+      "icon": "../images/station/supercharger_everyone.png",
+      "type": "supercharger_everyone"
+    },
+    {
+      "id": 10,
+      "lat": 37.88486441719977,
+      "lng": -122.06730050489527,
+      "icon": "../images/station/fast_charging.png",
+      "type": "fast_charging"
+    },
+    {
+      "id": 11,
+      "lat": 37.9123623520124,
+      "lng": -122.11897057740022,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 12,
+      "lat": 37.92563353997566,
+      "lng": -122.10781258832108,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 13,
+      "lat": 37.906673967000664,
+      "lng": -122.08927316031266,
+      "icon": "../images/station/supercharger_everyone.png",
+      "type": "supercharger_everyone"
+    },
+    {
+      "id": 14,
+      "lat": 37.93010187043001,
+      "lng": -122.08910149894221,
+      "icon": "../images/station/level_two.png",
+      "type": "level_two"
+    },
+    {
+      "id": 15,
+      "lat": 37.90125604859528,
+      "lng": -122.1323601642952,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 16,
+      "lat": 37.9104662724415,
+      "lng": -122.16068429150546,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 17,
+      "lat": 37.90003696188299,
+      "lng": -122.13888329745853,
+      "icon": "../images/station/supercharger_everyone.png",
+      "type": "supercharger_everyone"
+    },
+    {
+      "id": 18,
+      "lat": 37.87930940012047,
+      "lng": -122.15896767780097,
+      "icon": "../images/station/level_two.png",
+      "type": "level_two"
+    },
+    {
+      "id": 19,
+      "lat": 37.90721573680217,
+      "lng": -122.14283150897883,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 20,
+      "lat": 37.877005977515566,
+      "lng": -122.16634911673026,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 21,
+      "lat": 37.922383674442,
+      "lng": -122.15295952983527,
+      "icon": "../images/station/supercharger_everyone.png",
+      "type": "supercharger_everyone"
+    },
+    {
+      "id": 22,
+      "lat": 37.91141431828536,
+      "lng": -122.17287224880731,
+      "icon": "../images/station/level_two.png",
+      "type": "level_two"
+    },
+    {
+      "id": 23,
+      "lat": 37.88177203010417,
+      "lng": -122.06943695209968,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 24,
+      "lat": 37.88106005551885,
+      "lng": -122.08648589246562,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 25,
+      "lat": 37.882279456397804,
+      "lng": -122.08382514122366,
+      "icon": "../images/station/comming-soon.png",
+      "type": "commig_soon"
+    },
+    {
+      "id": 26,
+      "lat": 37.875504751587734,
+      "lng": -122.09180739494951,
+      "icon": "../images/station/level_two.png",
+      "type": "level_two"
+    },
+    {
+      "id": 27,
+      "lat": 37.890137333301254,
+      "lng": -122.08854582891098,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 28,
+      "lat": 37.873404466573234,
+      "lng": -122.0903482733007,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 29,
+      "lat": 37.87801146488446,
+      "lng": -122.10382369172002,
+      "icon": "../images/station/comming-soon.png",
+      "type": "commig_soon"
+    },
+    {
+      "id": 30,
+      "lat": 37.87733398318711,
+      "lng": -122.1098318396857,
+      "icon": "../images/station/level_two.png",
+      "type": "level_two"
+    },
+    {
+      "id": 31,
+      "lat": 37.87746948002506,
+      "lng": -122.11257842161288,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 32,
+      "lat": 37.88214396830032,
+      "lng": -122.11669829450364,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 33,
+      "lat": 37.88255043152111,
+      "lng": -122.11446669668781,
+      "icon": "../images/station/comming-soon.png",
+      "type": "commig_soon"
+    },
+    {
+      "id": 34,
+      "lat": 37.888240681059955,
+      "lng": -122.10760024186987,
+      "icon": "../images/station/level_two.png",
+      "type": "level_two"
+    },
+    {
+      "id": 35,
+      "lat": 37.871304121571434,
+      "lng": -122.10820105666643,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 36,
+      "lat": 37.90002622772724,
+      "lng": -122.04451468823011,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 37,
+      "lat": 37.91140358605128,
+      "lng": -122.05704596798012,
+      "icon": "../images/station/comming-soon.png",
+      "type": "commig_soon"
+    },
+    {
+      "id": 38,
+      "lat": 37.91390907733798,
+      "lng": -122.07884696202706,
+      "icon": "../images/station/fast_charging.png",
+      "type": "fast_charging"
+    },
+    {
+      "id": 39,
+      "lat": 37.91343507201771,
+      "lng": -122.08700087712334,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 40,
+      "lat": 37.920883374073114,
+      "lng": -122.10399535438492,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 41,
+      "lat": 37.91600820718131,
+      "lng": -122.10742858179387,
+      "icon": "../images/station/comming-soon.png",
+      "type": "commig_soon"
+    },
+    {
+      "id": 42,
+      "lat": 37.8872245977204,
+      "lng": -122.12811377693289,
+      "icon": "../images/station/fast_charging.png",
+      "type": "fast_charging"
+    },
+    {
+      "id": 43,
+      "lat": 37.903954324376876,
+      "lng": -122.12262061307858,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 44,
+      "lat": 37.89867166356691,
+      "lng": -122.09425134005568,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 45,
+      "lat": 37.88200848046236,
+      "lng": -122.12648299391363,
+      "icon": "../images/station/comming-soon.png",
+      "type": "commig_soon"
+    },
+    {
+      "id": 46,
+      "lat": 37.901245315088026,
+      "lng": -122.04185393727438,
+      "icon": "../images/station/fast_charging.png",
+      "type": "fast_charging"
+    },
+    {
+      "id": 47,
+      "lat": 37.917159317564,
+      "lng": -122.0943823166316,
+      "icon": "../images/station/store.png",
+      "type": "store"
+    },
+    {
+      "id": 48,
+      "lat": 37.90110986199741,
+      "lng": -122.10245040104266,
+      "icon": "../images/station/supercharger.png",
+      "type": "super_charger"
+    },
+    {
+      "id": 49,
+      "lat": 37.918174988085866,
+      "lng": -122.09524062348383,
+      "icon": "../images/station/comming-soon.png",
+      "type": "commig_soon"
+    },
+    {
+      "id": 50,
+      "lat": 37.9113358691947,
+      "lng": -122.1033087078949,
+      "icon": "../images/station/fast_charging.png",
+      "type": "fast_charging"
+    }
   ]
 }

@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layouts/Main";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import Cart from "../Pages/Cart/Cart";
+import Checkout from "../Pages/Checkout/Checkout";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import Error from "../Pages/Error/Error";
 import Gallery from "../Pages/Gallery/Gallery";
@@ -14,6 +16,7 @@ import Services from "../Pages/Services/Services";
 import ServicesDetails from "../Pages/Services/ServicesDetails";
 import Shop from "../Pages/Shop/Shop";
 import ShopDetails from "../Pages/Shop/ShopDetails";
+import Station from "../Pages/Station/Station";
 
 export const router = createBrowserRouter([
   {
@@ -26,26 +29,26 @@ export const router = createBrowserRouter([
         element: <HomePageOne></HomePageOne>,
       },
       {
-        path: "/homePageTwo",
+        path: "/homepage-two",
         element: <HomePageTwo></HomePageTwo>,
       },
       {
-        path: "/homePageThree",
+        path: "/homepage-three",
         element: <HomePageThree></HomePageThree>,
       },
       {
-        path: "/homePageFour",
+        path: "/homepage-four",
         element: <HomePageFour></HomePageFour>,
       },
       {
-        path: "/homePageFive",
+        path: "/homepage-five",
         element: <HomePageFive></HomePageFive>,
       },
 
       // single pages
 
       {
-        path: "/aboutUs",
+        path: "/about-us",
         element: <AboutUs></AboutUs>,
       },
 
@@ -56,7 +59,7 @@ export const router = createBrowserRouter([
         element: <Services></Services>,
       },
       {
-        path: "/services/:id",
+        path: "/service-details/:id",
         element: <ServicesDetails></ServicesDetails>,
       },
       // Gallery
@@ -75,6 +78,11 @@ export const router = createBrowserRouter([
         path: "/contact-us",
         element: <ContactUs></ContactUs>,
       },
+      // station
+      {
+        path: "/station",
+        element: <Station></Station>,
+      },
 
       //shop
       {
@@ -82,8 +90,16 @@ export const router = createBrowserRouter([
         element: <Shop></Shop>,
       },
       {
-        path: "/shop/:id",
+        path: "/shop-details/:id",
         element: <ShopDetails></ShopDetails>,
+      },
+      {
+        path: "/cart",
+        element: <Cart></Cart>,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout></Checkout>,
       },
     ],
   },
