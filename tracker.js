@@ -1,52 +1,18 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 import React, { useEffect, useState } from "react";
-
 import getData from "../../../utils/getData.json";
 
 function StationTracker() {
-  const center = {
+  const { station } = getData || {};
+
+  const [types, setTypes] = useState([]);
+  const [filterStations, setFilterStation] = useState(station);
+  const [map, setMap] = useState(null);
+  const [autocomplete, setAutocomplete] = useState(null);
+  const [currentLocation, setCurrentLocation] = useState({
     lat: 37.914247651005205,
     lng: -122.09481147005769,
-  };
-
-  const { station } = getData || {};
-  const [filterStations, setFilterStation] = useState(station);
-  const [zoom, setZoom] = useState(13);
-  const [map, setMap] = React.useState(null);
-  const [types, setTypes] = useState([]);
-  const [currentLocation, setCurrentLocation] = useState(center);
-  const [myLocation, setMyLocation] = useState(false);
-
-  //functions
-
-  // zoom out
-
-  const handleZoomIn = () => {
-    setZoom((prev) => prev + 1);
-  };
-
-  // zoom out
-
-  const handleZoomOut = () => {
-    setZoom((prev) => prev - 1);
-  };
-
-  // handle types
-
-  const handleTypes = (checkType) => {
-    setCurrentLocation(center);
-    setMyLocation(false);
-    setTypes((prevTypes) => {
-      if (prevTypes.includes(checkType)) {
-        return prevTypes.filter((type) => type !== checkType);
-      } else {
-        return [...prevTypes, checkType];
-      }
-    });
-  };
-
-  // handle Marker
+  });
 
   const handleMarker = () => {
     if (types?.length === 0) {
@@ -59,7 +25,15 @@ function StationTracker() {
     }
   };
 
-  // setCurrent Location
+  const handleTypes = (checkType) => {
+    setTypes((prevTypes) => {
+      if (prevTypes.includes(checkType)) {
+        return prevTypes.filter((type) => type !== checkType);
+      } else {
+        return [...prevTypes, checkType];
+      }
+    });
+  };
 
   const handleGetCurrentLocation = () => {
     if (navigator.geolocation) {
@@ -70,7 +44,6 @@ function StationTracker() {
             lng: position.coords.longitude,
           };
           setCurrentLocation(location);
-          setMyLocation(true);
           if (map !== null) {
             map.panTo(location);
           }
@@ -80,7 +53,6 @@ function StationTracker() {
         }
       );
     } else {
-      setMyLocation(false);
       console.error("Geolocation is not supported by this browser.");
     }
   };
@@ -89,35 +61,50 @@ function StationTracker() {
     handleMarker();
   }, [types]);
 
+  const [zoom, setZoom] = useState(13);
+
+  const handleZoomIn = () => {
+    setZoom((prev) => prev + 1);
+  };
+
+  const handleZoomOut = () => {
+    setZoom((prev) => prev - 1);
+  };
+
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY,
   });
 
-  return isLoaded ? (
+  if (!isLoaded) {
+    return <p>loading....</p>;
+  }
+  return (
     <section className="h-screen w-full relative">
       <div className="h-full">
         <GoogleMap
-          mapContainerStyle={{ width: "100%", height: "100%" }}
           center={currentLocation}
           zoom={zoom}
+          mapContainerStyle={{ width: "100%", height: "100%" }}
           options={{
             zoomControl: false,
           }}
         >
-          {myLocation && <Marker position={currentLocation}></Marker>}
-
-          {filterStations?.map((locat) => (
-            <Marker
-              key={locat?.id}
-              position={{
-                lat: locat?.lat,
-                lng: locat?.lng,
-              }}
-              icon={locat?.icon}
-            ></Marker>
-          ))}
+          {/* <Marker position={currentLocation}></Marker> */}
+          {filterStations?.map((mark) => {
+            return (
+              <Marker
+                position={{
+                  lat: mark?.lat,
+                  lng: mark?.lng,
+                }}
+                icon={mark?.icon}
+                key={mark?.id}
+              ></Marker>
+            );
+          })}
         </GoogleMap>
       </div>
+
       <div className="absolute bottom-8 right-8 z-30 flex flex-col gap-2">
         <button
           className="w-12 h-12 rounded-full flex items-center justify-center bg-pureWhite"
@@ -217,16 +204,12 @@ function StationTracker() {
           <span>Superchargers open to everyone</span>
         </button>
       </div>
+
       <div className="absolute top-4 left-1/2 -translate-x-1/2 md:left-8 md:-translate-x-0 z-30 flex flex-col items-end gap-2 text-pureWhite">
         <div className="flex items-center gap-4 bg-navyDark px-6 rounded-lg">
           <button type="button" className="flex items-center justify-center">
             <span class="material-symbols-outlined">search</span>
           </button>
-          {/* <input
-            type="text"
-            className="w-60 py-3 bg-transparent outline-none"
-            placeholder="Search for an Address or Location"
-          /> */}
           <input
             type="text"
             className="w-60 py-3 bg-transparent outline-none"
@@ -235,9 +218,7 @@ function StationTracker() {
         </div>
       </div>
     </section>
-  ) : (
-    <></>
   );
 }
 
-export default React.memo(StationTracker);
+export default StationTracker;

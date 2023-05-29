@@ -19,7 +19,7 @@ function GalleryImages() {
     if (gallery?.length <= nextRow) {
       setIsDisabled(true);
     }
-  }, [nextRow]);
+  }, [nextRow, gallery?.length]);
 
   return (
     <section className="px-6 py-10 md:pt-20 md:pb-6">
