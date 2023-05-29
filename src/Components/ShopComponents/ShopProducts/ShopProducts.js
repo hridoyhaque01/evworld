@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import getData from "../../../utils/getData.json";
 import ShopProductSingleItem from "./ShopProductSingleItem";
 // import ShopProductSingleItem from "./ShopProductSingleItem";
 
 function ShopProducts() {
   const { shopProducts } = getData || {};
+
+  const [showFilter, setShowFilter] = useState(false);
 
   return (
     <section className="px-6 py-10 md:py-20 text-pureWhite">
@@ -51,9 +53,133 @@ function ShopProducts() {
               </option>
             </select>
             <div className="relative inline-flex">
-              <button type="button" className=" bg-navySemi p-4 rounded-lg">
+              <button
+                type="button"
+                className=" bg-navySemi p-4 rounded-lg"
+                onClick={() => setShowFilter(true)}
+              >
                 <span className="material-symbols-outlined">tune</span>
               </button>
+              {showFilter && (
+                <div className="absolute top-20 right-0 w-72 sm:w-[500px] bg-navySemi shadow-lg` p-10 rounded-3xl">
+                  <div className="flex flex-col gap-12">
+                    <div className="flex items-center justify-between gap-2 pb-4 border-b border-navyFade">
+                      <h4>Filter</h4>
+                      <button
+                        type="button"
+                        onClick={() => setShowFilter(false)}
+                      >
+                        <span class="material-symbols-outlined">close</span>
+                      </button>
+                    </div>
+
+                    <div className="">
+                      <div>
+                        <input type="range" min="0" max="100" />
+                      </div>
+                    </div>
+
+                    <div>
+                      <h4 className="text-2xl font-bold">Filter by Color</h4>
+                      <ul className="flex flex-col gap-4 mt-6">
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">black</label>
+                        </li>
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">Blue</label>
+                        </li>
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">Dark Grey</label>
+                        </li>
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">Pink</label>
+                        </li>
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">Green</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-bold">Filter by Color</h4>
+                      <ul className="flex flex-col gap-4 mt-6">
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">Car</label>
+                        </li>
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">Charger for Commercial</label>
+                        </li>
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">Charger for Home</label>
+                        </li>
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">Car Accessories </label>
+                        </li>
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">Solar Panel</label>
+                        </li>
+                        <li className="flex items-center gap-2 text-base capitalize">
+                          <input
+                            type="checkbox"
+                            id=""
+                            className="w-4 h-4 accent-successColor"
+                          />
+                          <label htmlFor="">etc</label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

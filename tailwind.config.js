@@ -11,6 +11,7 @@ module.exports = {
       navyMid: "#4B4783", //used
       navyLow: "#3B3964", //used
       navyLight: "#3A3950", //used
+      navyFade: "#3D3B5F", //used
 
       primaryColor: "#C1EF00", //used
       successColor: "#2CC672", //used
