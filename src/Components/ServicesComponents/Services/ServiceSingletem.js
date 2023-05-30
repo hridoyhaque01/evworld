@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function ServiceSingletem({ image, title, id }) {
   return (
     <Link
-      to={`/services/${id}`}
+      to={`/service-details/${id}`}
       className="flex flex-col gap-6 p-6 rounded-2xl bg-navySemi"
     >
       <div>

@@ -47,13 +47,10 @@ module.exports = {
     },
 
     boxShadow: {
-      md: "0px 13px 40px rgba(0, 0, 0, 0.05)",
-      lg: "0px 4px 20px rgba(0, 0, 0, 0.08)",
-      xl: "0px 4px 40px rgba(0, 0, 0, 0.08)",
+      md: "0px 13px 40px rgba(0, 0, 0, 0.05)", //used
+      lg: "0px 4px 20px rgba(0, 0, 0, 0.08)", //used
+      xl: "0px 4px 40px rgba(0, 0, 0, 0.08)", //used
     },
-    // dropShadow: {
-    //   md: "0px 4px 20px rgba(0, 0, 0, 0.08)",
-    // },
 
     transitionDuration: {
       100: "100ms",
@@ -64,6 +61,10 @@ module.exports = {
 
     backgroundImage: {
       bannerOne: "url('./Assets/images/banner1.png')",
+      bannerTwo: "url('./Assets/images/banner2.png')",
+      bannerThree: "url('./Assets/images/banner3.png')",
+      bannerFour: "url('./Assets/images/banner4.png')",
+      bannerFive: "url('./Assets/images/banner5.png')",
       serviceDetails: "url('./Assets/images/service-details.png')",
       analyticsBg: "url('./Assets/images/analytics.png')",
     },

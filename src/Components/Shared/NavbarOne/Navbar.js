@@ -122,7 +122,7 @@ function Navbar() {
 
               <li className="relative group">
                 <p
-                  className="flex items-center px-6 py-2 md:p-0 hover:text-primaryColor hover:bg-navyDark md:hover:bg-transparent cursor-pointer group"
+                  className="flex items-center px-6 py-2 md:p-0 rounded-md hover:text-primaryColor hover:bg-navyDark md:hover:bg-transparent cursor-pointer group"
                   onClick={() => handleDropdown("pages")}
                 >
                   <span>Pages</span>
@@ -166,7 +166,7 @@ function Navbar() {
                       to="/service-details/1"
                       className="whitespace-nowrap pl-6 pr-16 py-2 flex hover:text-primaryColor"
                     >
-                      services
+                      service details
                     </NavLink>
                   </li>
                   <li>
@@ -184,7 +184,7 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/station"
-                  className="px-6 py-2 md:p-0 hover:text-primaryColor hover:bg-navyDark md:hover:bg-transparent"
+                  className="px-6 py-2 md:p-0 flex rounded-md hover:text-primaryColor hover:bg-navyDark md:hover:bg-transparent"
                 >
                   satation
                 </NavLink>
@@ -205,7 +205,7 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/blog"
-                  className="px-6 py-2 md:p-0 hover:text-primaryColor hover:bg-navyDark md:hover:bg-transparent"
+                  className="px-6 py-2 md:p-0 flex rounded-md hover:text-primaryColor hover:bg-navyDark md:hover:bg-transparent"
                 >
                   blog
                 </NavLink>
@@ -215,7 +215,7 @@ function Navbar() {
 
               <li className="relative group">
                 <p
-                  className="flex items-center hover:text-primaryColor cursor-pointer group px-6 py-2 md:p-0 hover:bg-navyDark md:hover:bg-transparent"
+                  className="flex items-center hover:text-primaryColor cursor-pointer group px-6 py-2 md:p-0 rounded-md hover:bg-navyDark md:hover:bg-transparent"
                   onClick={() => handleDropdown("shop")}
                 >
                   <span>shop</span>
@@ -278,7 +278,7 @@ function Navbar() {
               <li>
                 <NavLink
                   to="/contact-us"
-                  className="px-6 py-2 md:p-0 hover:text-primaryColor hover:bg-navyDark md:hover:bg-transparent"
+                  className="px-6 py-2 md:p-0 flex rounded-md hover:text-primaryColor hover:bg-navyDark md:hover:bg-transparent"
                 >
                   contact us
                 </NavLink>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Banner() {
   return (
-    <section className="py-32 md:py-36 lg:py-48 bg-bannerOne bg-no-repeat bg-top bg-cover">
+    <section className="py-32 md:py-36 lg:py-48 bg-bannerFive bg-no-repeat bg-top bg-cover">
       <div className="flex flex-col items-center">
         <h1 className="text-2xl md:text-6xl font-clashBold text-primaryColor uppercase">
           Cart

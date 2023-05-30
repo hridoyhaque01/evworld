@@ -161,7 +161,7 @@ function Navbar() {
                     to="/service-details/1"
                     className="whitespace-nowrap pl-6 pr-16 py-2 flex hover:text-primaryColor"
                   >
-                    services
+                    service details
                   </NavLink>
                 </li>
                 <li>

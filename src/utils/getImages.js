@@ -3,9 +3,12 @@ import productCar from "../Assets/images/products/productCar.png";
 import productCharging from "../Assets/images/products/productCharging.png";
 import productStation from "../Assets/images/products/productStation.png";
 
-// features
+// error
 
 import error from "../Assets/images/error.png";
+
+// features
+
 import acceleration from "../Assets/images/features/acceleration.png";
 import battery from "../Assets/images/features/battery.png";
 import braking from "../Assets/images/features/braking.png";
@@ -17,6 +20,17 @@ import featureCar from "../Assets/images/features/feature-car.png";
 import infotainment from "../Assets/images/features/infotainment.png";
 import safety from "../Assets/images/features/safety.png";
 import wheels from "../Assets/images/features/wheels.png";
+
+import accelerationTwo from "../Assets/images/features/acceleration-two.png";
+import batteryTwo from "../Assets/images/features/battery-two.png";
+import brakingTwo from "../Assets/images/features/braking-two.png";
+import carSizeTwo from "../Assets/images/features/car-size-two.png";
+import chargingTwo from "../Assets/images/features/charging-two.png";
+import ecoTwo from "../Assets/images/features/eco-two.png";
+import electricTwo from "../Assets/images/features/electric-two.png";
+import infotainmentTwo from "../Assets/images/features/infotainment-two.png";
+import safetyTwo from "../Assets/images/features/safety-two.png";
+import wheelsTwo from "../Assets/images/features/wheels-two.png";
 
 //contact
 
@@ -76,4 +90,14 @@ export {
   circle,
   paypal,
   supercharger,
+  accelerationTwo,
+  batteryTwo,
+  brakingTwo,
+  carSizeTwo,
+  chargingTwo,
+  ecoTwo,
+  electricTwo,
+  infotainmentTwo,
+  safetyTwo,
+  wheelsTwo,
 };

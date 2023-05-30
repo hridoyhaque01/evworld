@@ -35,8 +35,6 @@ function StationTracker() {
   // handle types
 
   const handleTypes = (checkType) => {
-    setCurrentLocation(center);
-    setMyLocation(false);
     setTypes((prevTypes) => {
       if (prevTypes.includes(checkType)) {
         return prevTypes.filter((type) => type !== checkType);
@@ -217,7 +215,7 @@ function StationTracker() {
           <span>Superchargers open to everyone</span>
         </button>
       </div>
-      <div className="absolute top-4 left-1/2 -translate-x-1/2 md:left-8 md:-translate-x-0 z-30 flex flex-col items-end gap-2 text-pureWhite">
+      <div className="absolute top-4 left-4 sm:left-8 sm:right-auto flex flex-col items-end gap-2 text-pureWhite">
         <div className="flex items-center gap-4 bg-navyDark px-6 rounded-lg">
           <button type="button" className="flex items-center justify-center">
             <span class="material-symbols-outlined">search</span>
@@ -229,7 +227,7 @@ function StationTracker() {
           /> */}
           <input
             type="text"
-            className="w-60 py-3 bg-transparent outline-none"
+            className="w-52 sm:w-60 py-3 bg-transparent outline-none"
             placeholder="Search for an Address or Location"
           />
         </div>
