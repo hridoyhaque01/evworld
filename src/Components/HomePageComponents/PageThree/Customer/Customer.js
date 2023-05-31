@@ -22,7 +22,7 @@ function Customer({ details }) {
         <p className="text-primaryColor mt-1 mb-6">Customer</p>
         <div className="flex items-center">
           {stars?.map((star, i) => (
-            <Rating filled={star} key={i}></Rating>
+            <Rating light={true} filled={star} key={i}></Rating>
           ))}
         </div>
         <div className="w-full border-t border-whiteMid my-6"></div>

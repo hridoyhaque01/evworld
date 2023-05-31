@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 function TeamSingleMember({ details }) {
   const { name, position, instaLink, linkedinLink, image } = details || {};
   return (
-    <div className="flex flex-col gap-3 px-3 pb-3 pt-8 bg-navySemi rounded-2xl border-2 border-transparent group hover:border-primaryColor duration-200 ">
-      <div>
+    <div className="flex flex-col gap-3 px-3 pb-3 pt-8 bg-navySemi rounded-2xl border-2 border-transparent group hover:border-primaryColor duration-200 item">
+      <div className="w-32 xl:max-w-40 mx-auto">
         <img
           src={image}
           alt="team"
-          className="w-32 xl:w-40 mx-auto saturate-0 group-hover:saturate-100 duration-300"
+          className="saturate-0 group-hover:saturate-100 duration-300"
         />
       </div>
       <div className="text-center md:text-left bg-whiteHigh group-hover:bg-primaryColor rounded-lg px-2 sm:px-4 py-6 ">

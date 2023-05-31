@@ -7,7 +7,7 @@ import NewsSingleItem from "./NewsSingleItem";
 function News() {
   const { news } = getData || {};
   return (
-    <section className="px-6 lg:px-28 2xl:px-32 mx-auto pt-10 md:pt-20 xl:pt-28">
+    <section className=" pt-10 md:pt-20 xl:pt-28">
       <div>
         <SectionTitle
           title="News and Insights"

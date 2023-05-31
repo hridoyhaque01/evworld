@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { logoDark } from "../../../utils/getImages";
+import { logoBlack } from "../../../utils/getImages";
 
 function Navbar() {
   const [isSubmenuOpen, setIsSubmenuOpen] = useState({});
@@ -15,12 +15,12 @@ function Navbar() {
   };
 
   return (
-    <nav className="py-8 px-6 md:text-navyDark text-pureWhite bg-primaryColor font-medium uppercase">
+    <nav className="py-8 px-10 md:text-navyDark text-pureWhite bg-primaryColor font-medium uppercase">
       <div className="max-w-[1180px] mx-auto">
         <div className="flex items-center justify-between md:hidden">
           <div className="flex-1 text-center">
             <NavLink to="/" className="">
-              <img src={logoDark} alt="" />
+              <img src={logoBlack} alt="" />
             </NavLink>
           </div>
           <div>
@@ -45,7 +45,7 @@ function Navbar() {
             </button>
           </div>
           <div className="px-8 md:p-0 ">
-            <ul className="flex flex-col md:flex-row md:items-center gap-6">
+            <ul className="flex flex-col md:flex-row md:items-center gap-6 md:gap-3 lg:gap-6">
               {/* home pages  */}
               <li className="relative group">
                 <p
@@ -191,14 +191,14 @@ function Navbar() {
             </ul>
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden md:block md:w-36 lg:w-auto">
             <Link to="/">
-              <img src={logoDark} alt="" />
+              <img src={logoBlack} alt="" />
             </Link>
           </div>
 
           <div className="px-8 md:p-0">
-            <ul className="flex flex-col md:flex-row md:items-center gap-6">
+            <ul className="flex flex-col md:flex-row md:items-center gap-6 md:gap-3 lg:gap-6">
               {/* blog page  */}
 
               <li>

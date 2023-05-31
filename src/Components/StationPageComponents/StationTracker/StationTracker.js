@@ -218,7 +218,7 @@ function StationTracker() {
       <div className="absolute top-4 left-4 sm:left-8 sm:right-auto flex flex-col items-end gap-2 text-pureWhite">
         <div className="flex items-center gap-4 bg-navyDark px-6 rounded-lg">
           <button type="button" className="flex items-center justify-center">
-            <span class="material-symbols-outlined">search</span>
+            <span className="material-symbols-outlined">search</span>
           </button>
           {/* <input
             type="text"

@@ -12,9 +12,13 @@ function ContactUs() {
       <Navbar></Navbar>
       <main>
         <Banner></Banner>
-        <ContactDetails></ContactDetails>
-        <Contact></Contact>
-        <Location></Location>
+        <div className="px-6 sm:px-12 md:px-16 lg:px-20">
+          <div className="max-w-[1180px] mx-auto">
+            <ContactDetails></ContactDetails>
+            <Contact></Contact>
+            <Location></Location>
+          </div>
+        </div>
       </main>
       <Footer></Footer>
     </div>

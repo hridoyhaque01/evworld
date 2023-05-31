@@ -18,13 +18,17 @@ function PageTwo() {
       <main className="">
         <Banner></Banner>
         <About></About>
-        <Team></Team>
-        <Products></Products>
-        <Analytics></Analytics>
-        <CarFeature></CarFeature>
-        <CustomerList></CustomerList>
-        <Contact></Contact>
-        <News></News>
+        <div className="px-6 sm:px-12 md:px-16 lg:px-20">
+          <div className="max-w-[1180px] mx-auto">
+            <Team></Team>
+            <Products></Products>
+            <Analytics></Analytics>
+            <CarFeature></CarFeature>
+            <CustomerList></CustomerList>
+            <Contact></Contact>
+            <News></News>
+          </div>
+        </div>
       </main>
       <Footer></Footer>
     </>

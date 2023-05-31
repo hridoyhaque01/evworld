@@ -28,7 +28,7 @@ function ProductSingleItem({ image, title }) {
           className="py-14 px-8 transform group-hover:scale-x-[-1] duration-300"
         />
       </div>
-      <p className="text-center text-2xl font-bold text-pureWhite capitalize peer-hover:text-primaryColor">
+      <p className="text-center md:text-xl lg:text-2xl font-bold text-pureWhite capitalize peer-hover:text-primaryColor">
         {title}
       </p>
     </div>

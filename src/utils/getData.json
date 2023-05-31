@@ -45,6 +45,52 @@
       "rating": 3
     }
   ],
+  "customersFive": [
+    {
+      "id": 1,
+      "name": "Robert Fox",
+      "description": "I recently purchased an electric car from this manufacturing company and I couldn't be happier with my decision. The car is incredibly efficient and reliable, with a range that meets all of my daily driving needs. The customer service was also exceptional, with the team going above and beyond to answer all of my questions and ensure a smooth buying process. I highly recommend this company for anyone in the market for an electric car.",
+      "image": "../images/customers/customerOne.png",
+      "rating": 5
+    },
+
+    {
+      "id": 2,
+      "name": "Carissa Cooper",
+      "description": "I recently purchased an electric car from this manufacturing company and I couldn't be happier with my decision. The car is incredibly efficient and reliable, with a range that meets all of my daily driving needs. The customer service was also exceptional, with the team going above and beyond to answer all of my questions and ensure a smooth buying process. I highly recommend this company for anyone in the market for an electric car.",
+      "image": "../images/customers/customerTwo.png",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "name": "Sophia Loren",
+      "description": "I recently purchased an electric car from this manufacturing company and I couldn't be happier with my decision. The car is incredibly efficient and reliable, with a range that meets all of my daily driving needs. The customer service was also exceptional, with the team going above and beyond to answer all of my questions and ensure a smooth buying process. I highly recommend this company for anyone in the market for an electric car.",
+      "image": "../images/customers/customerThree.png",
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "name": "Robert Fox",
+      "description": "I recently purchased an electric car from this manufacturing company and I couldn't be happier with my decision. The car is incredibly efficient and reliable, with a range that meets all of my daily driving needs. The customer service was also exceptional, with the team going above and beyond to answer all of my questions and ensure a smooth buying process. I highly recommend this company for anyone in the market for an electric car.",
+      "image": "../images/customers/customerOne.png",
+      "rating": 5
+    },
+
+    {
+      "id": 5,
+      "name": "Carissa Cooper",
+      "description": "I recently purchased an electric car from this manufacturing company and I couldn't be happier with my decision. The car is incredibly efficient and reliable, with a range that meets all of my daily driving needs. The customer service was also exceptional, with the team going above and beyond to answer all of my questions and ensure a smooth buying process. I highly recommend this company for anyone in the market for an electric car.",
+      "image": "../images/customers/customerTwo.png",
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "name": "Sophia Loren",
+      "description": "I recently purchased an electric car from this manufacturing company and I couldn't be happier with my decision. The car is incredibly efficient and reliable, with a range that meets all of my daily driving needs. The customer service was also exceptional, with the team going above and beyond to answer all of my questions and ensure a smooth buying process. I highly recommend this company for anyone in the market for an electric car.",
+      "image": "../images/customers/customerOne.png",
+      "rating": 3
+    }
+  ],
   "pageOneMembers": [
     {
       "id": 1,
@@ -77,6 +123,22 @@
       "instaLink": "/",
       "linkedinLink": "/",
       "image": "../images/team/memberFour.png"
+    },
+    {
+      "id": 5,
+      "name": "Kathryn Murphy",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "../images/team/memberTwo.png"
+    },
+    {
+      "id": 6,
+      "name": "Devon Lane",
+      "position": "CEO (Chief Executive Officer)",
+      "instaLink": "/",
+      "linkedinLink": "/",
+      "image": "../images/team/memberThree.png"
     }
   ],
   "pageTwoMembers": [
@@ -239,22 +301,22 @@
     {
       "id": 1,
       "image": "../images/products/productCar.png",
-      "title": "cars"
+      "title": "Home Charging"
     },
     {
       "id": 2,
       "image": "../images/products/productCharging.png",
-      "title": "cars"
+      "title": "Cars"
     },
     {
       "id": 3,
       "image": "../images/products/productStation.png",
-      "title": "cars"
+      "title": "Charging Station"
     },
     {
       "id": 4,
       "image": "../images/products/productCharging.png",
-      "title": "cars"
+      "title": "Components"
     }
   ],
   "services": [

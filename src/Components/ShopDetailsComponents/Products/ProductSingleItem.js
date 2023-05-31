@@ -10,7 +10,7 @@ function ProductSingleItem({ details }) {
   const stars = getRatings(rating);
   return (
     <Link
-      to={`/shop/${id}`}
+      to={`/shop-details/${id}`}
       className="block bg-navySemi rounded-3xl overflow-hidden text-pureWhite"
     >
       <div className="">

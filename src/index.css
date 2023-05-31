@@ -29,3 +29,29 @@ body {
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 200, "opsz" 24;
 }
+
+.owl-carousel button.active {
+  background-color: #c1ef00;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: #e8e8e8;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #c1ef00;
+}
+
+@media screen and (max-width: 1023px) {
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}

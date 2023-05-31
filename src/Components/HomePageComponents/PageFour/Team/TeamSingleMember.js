@@ -10,7 +10,7 @@ function TeamSingleMember({ details }) {
           <img src={image} alt="team" className="w-full duration-300" />
         </div>
         <div className="text-center absolute left-3 xl:left-6 right-3 xl:right-6  -bottom-10 bg-primaryColor py-4 px-2 rounded-2xl">
-          <h2 className="text-base md:text-lg lg:text-2xl font-bold text-blackFadeDark">
+          <h2 className="text-base lg:text-2xl font-bold text-blackFadeDark">
             {name}
           </h2>
           <p className="text-xs text-blackMid mt-2">{position}</p>

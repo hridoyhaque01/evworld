@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function NewsSingleItem({ details }) {
   const { title, texts, image } = details || {};
   return (
-    <div>
+    <div className="item">
       <div>
         <img src={image} alt="news" />
       </div>

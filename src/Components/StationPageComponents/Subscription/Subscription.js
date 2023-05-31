@@ -14,13 +14,13 @@ function Subscription() {
             <div className="flex flex-col md:flex-row xl:flex-1 gap-6">
               <input
                 type="email"
-                placeholder="Your Email*"
-                className="w-full px-4 py-4  border border-whiteSemi outline-none rounded-full"
+                placeholder="Your Name*"
+                className="w-full px-4 py-4 text-pureWhite bg-navyDark outline-none rounded-full"
               />
               <input
                 type="email"
                 placeholder="Your Email*"
-                className="w-full px-4 py-4  border border-whiteSemi outline-none rounded-full"
+                className="w-full px-4 py-4 text-pureWhite bg-navyDark outline-none rounded-full"
               />
             </div>
             <div className="text-center">
@@ -47,7 +47,7 @@ export default Subscription;
 //               <input
 //                 type="email"
 //                 placeholder="Your Email*"
-//                 className="w-full px-4 py-4  border border-whiteSemi outline-none rounded-full"
+//                 className="w-full px-4 py-4 text-pureWhite bg-navyDark outline-none rounded-full"
 //               />
 //             </div>
 //

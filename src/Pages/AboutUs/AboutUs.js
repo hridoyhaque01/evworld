@@ -12,9 +12,17 @@ function AboutUs() {
       <Navbar></Navbar>
       <main>
         <Banner></Banner>
-        <About></About>
+        <div className="px-6 sm:px-12 md:px-16 lg:px-20">
+          <div className="max-w-[1180px] mx-auto">
+            <About></About>
+          </div>
+        </div>
         <Analytics></Analytics>
-        <CustomerList></CustomerList>
+        <div className="px-6 sm:px-12 md:px-16 lg:px-20">
+          <div className="max-w-[1180px] mx-auto">
+            <CustomerList></CustomerList>
+          </div>
+        </div>
       </main>
       <Footer></Footer>
     </div>

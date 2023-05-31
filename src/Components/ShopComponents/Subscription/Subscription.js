@@ -16,12 +16,12 @@ function Subscription() {
                 <input
                   type="email"
                   placeholder="Your Email*"
-                  className="w-full px-4 py-4  border border-whiteSemi outline-none rounded-full"
+                  className="w-full px-4 py-4 text-pureWhite bg-navyDark outline-none rounded-full"
                 />
                 <input
                   type="email"
                   placeholder="Your Email*"
-                  className="w-full px-4 py-4  border border-whiteSemi outline-none rounded-full"
+                  className="w-full px-4 py-4 text-pureWhite bg-navyDark outline-none rounded-full"
                 />
               </div>
               <div className="text-center">

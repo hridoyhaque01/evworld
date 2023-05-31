@@ -22,27 +22,23 @@ function GalleryImages() {
   }, [nextRow, gallery?.length]);
 
   return (
-    <section className="px-6 py-10 md:pt-20 md:pb-6">
-      <div className="max-w-[1180px] mx-auto">
-        <div className="columns-1 md:columns-3 gap-6">
-          {currentRows?.map((item) => (
-            <div key={item?.id} className="">
-              <img src={item?.image} alt="" className="w-full" />
-            </div>
-          ))}
-        </div>
-        <div className="text-center mt-20 mb-10">
-          <button
-            type="button"
-            className={`${
-              isDisabled ? " text-whiteFade" : "text-primaryColor"
-            }`}
-            onClick={handleLoadImage}
-            disabled={isDisabled}
-          >
-            <span className="material-symbols-outlined">refresh</span>
-          </button>
-        </div>
+    <section className="py-10 md:pt-20 md:pb-6">
+      <div className="columns-1 md:columns-3 gap-6">
+        {currentRows?.map((item) => (
+          <div key={item?.id} className="">
+            <img src={item?.image} alt="" className="w-full" />
+          </div>
+        ))}
+      </div>
+      <div className="text-center mt-20 mb-10">
+        <button
+          type="button"
+          className={`${isDisabled ? " text-whiteFade" : "text-primaryColor"}`}
+          onClick={handleLoadImage}
+          disabled={isDisabled}
+        >
+          <span className="material-symbols-outlined">refresh</span>
+        </button>
       </div>
     </section>
   );

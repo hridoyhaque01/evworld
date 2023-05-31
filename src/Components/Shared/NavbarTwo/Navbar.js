@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="py-6 lg:py-8 px-6 bg-navyDark absolute top-4 lg:top-10 xl:top-8 left-4 right-4 md:left-12 xl:left-16 md:right-12 xl:right-16  text-pureWhite font-medium uppercase">
+    <nav className="py-6 lg:py-8 px-6 lg:px-8 bg-navyDark absolute top-4 lg:top-10 xl:top-8 left-4 right-4 md:left-12 xl:left-16 md:right-12 xl:right-16 md:text-sm lg:text-base text-pureWhite font-medium uppercase">
       <div className="flex items-center justify-between md:hidden">
         <div className="flex-1 text-center">
           <NavLink to="/" className="">
@@ -41,7 +41,7 @@ function Navbar() {
           </button>
         </div>
         <div className="px-8 md:p-0">
-          <ul className="flex flex-col md:flex-row md:items-center gap-6">
+          <ul className="flex flex-col md:flex-row md:items-center gap-6 md:gap-3 lg:gap-6">
             {/* home pages  */}
             <li className="relative group">
               <p
@@ -187,14 +187,14 @@ function Navbar() {
           </ul>
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden md:block md:w-36 lg:w-auto">
           <Link to="/">
             <img src={logoWhite} alt="" />
           </Link>
         </div>
 
         <div className="px-8 md:p-0">
-          <ul className="flex flex-col md:flex-row md:items-center gap-6">
+          <ul className="flex flex-col md:flex-row md:items-center gap-6 md:gap-3 lg:gap-6">
             {/* blog page  */}
 
             <li>

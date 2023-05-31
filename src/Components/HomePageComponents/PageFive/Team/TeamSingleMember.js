@@ -8,7 +8,7 @@ function TeamSingleMember({ details }) {
         <img src={image} alt="team" className=" duration-300 mx-auto" />
       </div>
       <div className="text-center mt-12">
-        <h2 className="text-base md:text-2xl font-bold text-pureWhite">
+        <h2 className="text-base md:text-xl lg:text-2xl font-bold text-pureWhite">
           {name}
         </h2>
         <p className="text-xs text-whiteSemi mt-2">{position}</p>

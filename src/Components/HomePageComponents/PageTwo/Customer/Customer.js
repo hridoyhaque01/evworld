@@ -22,7 +22,7 @@ function Customer({ details }) {
         <div className=" my-4 sm:my-6 border-t border-whiteMid"></div>
         <div className="flex justify-between">
           <div>
-            <h4 className="text-sm md:text-2xl font-medium md:font-bold text-blackFadeDark">
+            <h4 className="text-sm md:text-lg lg:text-xl font-medium md:font-bold text-blackFadeDark">
               {name}
             </h4>
             <p className="text-primaryColor">Customer</p>

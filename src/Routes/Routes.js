@@ -6,7 +6,6 @@ import Checkout from "../Pages/Checkout/Checkout";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import Error from "../Pages/Error/Error";
 import Gallery from "../Pages/Gallery/Gallery";
-import GalleryImageDetails from "../Pages/Gallery/GalleryImageDetails";
 import HomePageFive from "../Pages/HomePages/PageFive/HomePageFive";
 import HomePageFour from "../Pages/HomePages/PageFour/HomePageFour";
 import HomePageOne from "../Pages/HomePages/PageOne/HomePageOne";
@@ -67,10 +66,6 @@ export const router = createBrowserRouter([
       {
         path: "/gallery",
         element: <Gallery></Gallery>,
-      },
-      {
-        path: "/gallery/:id",
-        element: <GalleryImageDetails></GalleryImageDetails>,
       },
 
       // contact us

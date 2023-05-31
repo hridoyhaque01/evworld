@@ -11,7 +11,11 @@ function Shop() {
       <Navbar></Navbar>
       <main>
         <Banner></Banner>
-        <ShopProducts></ShopProducts>
+        <div className="px-6 sm:px-12 md:px-16 lg:px-20">
+          <div className="max-w-[1180px] mx-auto">
+            <ShopProducts></ShopProducts>
+          </div>
+        </div>
         <Subscription></Subscription>
       </main>
       <Footer></Footer>

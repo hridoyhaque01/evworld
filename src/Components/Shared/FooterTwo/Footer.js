@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="px-6 py-10 bg-blackSemi text-pureWhite">
-      <div>
+      <div className="max-w-[1180px] mx-auto">
         <div className="flex flex-col items-center gap-12">
           <div>
             <img src={logoWhite} alt="" />

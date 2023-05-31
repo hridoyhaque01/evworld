@@ -12,9 +12,13 @@ function ShopDetails() {
       <Navbar></Navbar>
       <main>
         <Banner></Banner>
-        <ShopProductDetails></ShopProductDetails>
-        <Description></Description>
-        <Products></Products>
+        <div className="px-6 sm:px-12 md:px-16 lg:px-20">
+          <div className="max-w-[1180px] mx-auto">
+            <ShopProductDetails></ShopProductDetails>
+            <Description></Description>
+            <Products></Products>
+          </div>
+        </div>
       </main>
       <Footer></Footer>
     </div>

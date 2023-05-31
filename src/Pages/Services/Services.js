@@ -11,8 +11,12 @@ function Services() {
       <Navbar></Navbar>
       <main>
         <Banner></Banner>
-        <ServiceLists></ServiceLists>
-        <Contact></Contact>
+        <div className="px-6 sm:px-12 md:px-16 lg:px-20">
+          <div className="max-w-[1180px] mx-auto">
+            <ServiceLists></ServiceLists>
+            <Contact></Contact>
+          </div>
+        </div>
       </main>
       <Footer></Footer>
     </div>
