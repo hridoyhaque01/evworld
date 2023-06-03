@@ -50,6 +50,12 @@ function CartDetails() {
                         type="number"
                         className="w-full max-w-[50px] outline-none bg-transparent appearance-none [&::--moz-webkit-inner-spin-button]:appearance-none text-center"
                         value={cartValue}
+                        style={{
+                          MozAppearance: "textfield",
+                          "::-webkit-outer-spin-button": { opacity: 0 },
+                          "::-webkit-inner-spin-button": { opacity: 0 },
+                          "::-moz-appearance": "textfield",
+                        }}
                         onChange={(e) => handleCartChange(e.target.value)}
                       />
                       <div className="flex flex-col">

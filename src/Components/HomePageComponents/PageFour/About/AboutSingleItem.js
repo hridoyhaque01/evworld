@@ -6,7 +6,7 @@ function AboutSingleItem({ image, title, texts }) {
       <div className=" rounded-full">
         <img src={image} alt="about" className="w-full" />
       </div>
-      <div className="md:px-3 md:py-6 lg:p-6">
+      <div className="px-3 py-6 lg:p-6">
         <h4 className="text-base lg:text-xl font-medium xl:text-2xl xl:font-bold">
           {title}
         </h4>

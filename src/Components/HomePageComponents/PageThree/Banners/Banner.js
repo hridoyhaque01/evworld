@@ -2,7 +2,7 @@ import React from "react";
 
 function Banner() {
   return (
-    <section className="text-pureWhite bg-bannerThree bg-no-repeat bg-bottom bg-cover object-contain flex items-center px-6 justify-center pt-32 pb-14 md:pt-64 md:pb-36">
+    <section className="text-pureWhite bg-bannerThree bg-no-repeat bg-center bg-cover object-contain flex items-center px-6 justify-center pt-32 pb-14 md:pt-64 md:pb-36">
       <div className="text-center  md:max-w-[590px]">
         <h1 className="font-bebas text-4xl md:text-8xl xl:text-9xl  uppercase text-primaryColor">
           Drive beyond

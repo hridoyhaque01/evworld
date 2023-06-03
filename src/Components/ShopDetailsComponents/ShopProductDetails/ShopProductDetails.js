@@ -58,6 +58,12 @@ function ShopProductDetails() {
                 className="w-24 p-4 lg:p-5 rounded-full bg-navySemi outline-none  [&::-webkit-inner-spin-button]:appearance-none text-center"
                 value={cartValue}
                 onChange={(e) => handleCartChange(e.target.value)}
+                style={{
+                  MozAppearance: "textfield",
+                  "::-webkit-outer-spin-button": { opacity: 0 },
+                  "::-webkit-inner-spin-button": { opacity: 0 },
+                  "::-moz-appearance": "textfield",
+                }}
               />
               <div className="flex flex-col">
                 <button type="button" onClick={increaseCartValue}>

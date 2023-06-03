@@ -5,7 +5,7 @@ import AboutSingleItem from "./AboutSingleItem";
 function About() {
   return (
     <section className="py-10 md:pt-10 md:pb-20 lg:pt-20 lg:pb-36">
-      <div className="flex flex-col md:bg-navySemi rounded-3xl p-10 gap-4 md:gap-11">
+      <div className="flex flex-col md:bg-navySemi rounded-3xl md:p-10 gap-4 md:gap-11">
         <div className="flex flex-col md:flex-row items-center lg:col-span-3 gap-4 md:bg-navySemi md:rounded-[40px]">
           {/* single about content  */}
           <AboutSingleItem
